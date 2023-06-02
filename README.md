@@ -8,6 +8,7 @@
 # 📺 실행 화면
 
 
+# DB(Oracle)
 /*
 CREATE TABLE address(
 userid varchar2(30) not null,
