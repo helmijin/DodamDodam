@@ -2,6 +2,7 @@
 2023.02.20 ~ 2023.03.13 (22일)
 
 # ⚙ 개발 환경 
+![image](https://github.com/helmijin/DodamDodam/assets/113495471/fa5dad71-a37b-4a21-9a5a-7e47c504f253)
 
 
 # 📺 실행 화면
