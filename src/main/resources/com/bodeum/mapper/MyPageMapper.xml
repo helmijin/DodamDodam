@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bodeum.mapper.MyPageMapper">
+
+	<select id="getCartList" resultType="com.bodeum.domain.CartVO">
+		select * from cart where userid=#{userid}
+	</select>
+	
+	<delete id="deleteCartList">
+	<![CDATA[
+		delete from cart where userid=#{userid} and itemnum=#{itemnum}
+		]]>
+	</delete>
+	
+	<update id="updateCartList">
+		<![CDATA[
+		update cart set itemcnt=#{itemcnt} WHERE userid=#{userid} and itemnum=#{itemnum}
+		  ]]>
+	</update>
+	
+	<select id="getOrderList" resultType="com.bodeum.domain.OrderListVO">
+		select * from orderlist where ordernum=#{ordernum}
+	</select>
+	
+	<select id="getCouponList" resultType="com.bodeum.domain.CouponVO">
+		select * from coupon where userid=#{userid}
+	</select>
+	
+	<select id="getUser" resultType="com.bodeum.domain.MemberVO">
+		select * from member where userid=#{userid}
+	</select>
+	
+	<select id="getAddress" resultType="com.bodeum.domain.AddressVO">
+		select * from address where userid=#{userid}
+	</select>
+	
+	<select id="getPayment" resultType="com.bodeum.domain.PaymentVO">
+		select * from payment where userid=#{userid}
+	</select>
+	
+	<select id="getProductList" resultType="com.bodeum.domain.ProductVO">
+		select * from product order by itemnum desc
+	</select>
+	
+	<select id="getProduct" resultType="com.bodeum.domain.ProductVO">
+		select * from product where itemnum=#{itemnum}
+	</select>
+	
+	  <update id="update" >
+  	update member
+  	set  
+  	passwd = #{passwd},
+  	gender = #{gender},
+  	b_year = #{b_year},
+  	b_month = #{b_month},
+  	b_day = #{b_day},
+  	ph1 = #{ph1},
+  	ph2 = #{ph2},
+  	ph3 = #{ph3},
+  	email1 = #{email1},
+  	email2 = #{email2},
+  	sms = #{sms, jdbcType=VARCHAR},
+  	mailing = #{mailing, jdbcType=VARCHAR}
+  	where userid = #{userid}
+  </update>
+  
+  
+  <select id="read" resultType="com.bodeum.domain.MemberVO">
+  	select *from member where userid = #{userid}
+  </select>
+  
+  <delete id="delete">
+  delete from member where userid=#{userid}
+  </delete>
+
+</mapper>

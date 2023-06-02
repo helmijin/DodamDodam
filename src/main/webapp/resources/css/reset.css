@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, /*strong,*/ sub, sup, tt, var,
+/*b, u, i, center,*/
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, textarea, input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color:#333;
+	box-sizing:border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	line-height: 1;
+	font-family : 'Noto Sans KR', sans-serif;
+	letter-spacing:-0.5px;
+	word-break:keep-all;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+     min-width: 100%; max-width: none; width: auto;
+
+	empty-cells: show;
+}
+b, strong{font-weight:bold}
+/* 기본 링크 스타일 */
+a:link, a:visited, a:hover, a:focus, a:active	{ text-decoration:none;}
+
+/*공통*/
+input[type="text"], input[type="password"], textarea{
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border:1px solid #d7d7d7;
+				}
+input[type="text"]{height:37px; line-height:35px;border-radius:0px;}
+ textarea, input{box-sizing:border-box;}
+input[type="button"]{
+-webkit-appearance:  none;
+-moz-appearance: none;
+appearance: none;
+}
+
+input[type="text"]::-ms-clear {
+display:none;
+}
+textarea{resize:none;}
+.mypage-srchFilter .datePick input::-webkit-search-cancel-button {   /* select all "X" buttons in search inputs */
+   appearance: none;
+}
+
+.mypage-srchFilter .datePick input::-webkit-search-cancel-button:after {  /* generate content after all "X" buttons */
+    content: '';    /* required for :after content to show */
+    display: block;
+
+    /*
+     * Setup dimensions for the custom icon.  Note that these dimensions seem to
+     * affect positioning.
+     */
+    width: 14px;
+    height: 10px;
+    
+    /*
+     * Base64 encoded custom "X" icon
+     * Natively 30x30, but downscaled for highres screens
+     */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+
+    /* setup all the background tweaks for our custom icon */
+    background-repeat: no-repeat;
+
+    /* icon size */
+    background-size: 10px;
+
+    /* note: this positioning will need to be tweaked for iOS */
+    background-position: top left;
+}
+
+select::-ms-expand {display: none;background:#fff url('../img/select_arrow.png') no-repeat 100% 50%;  /* 화살표 모양의 이미지 */
+
+background-size:19px; text-indent: 1px;
+    text-overflow: '';}
+select::-ms-expand{display:none; padding:0 0px 0 10px\9;}
+
+select{
+padding:0 22px 0 10px;overflow: hidden !important;
+ -webkit-border-radius: 0;
+  /* 네이티브 외형 감추기 */
+-webkit-appearance:  none;
+-moz-appearance: none;
+appearance: none;
+background:#fff url('../img/select_arrow.png') no-repeat 100% 50%;  /* 화살표 모양의 이미지 */
+background-size:19px;
+border:1px solid #d7d7d7;
+height: 37px;
+padding-left: 10px; color:#777; vertical-align:middle; font-size:13px;}
+select{
+ padding:0 0px 0 10px\9;
+}
+
+
+@media all and (min-width:768px) and (max-width:1024px) {
+body { font-size: 14px; line-height: 22px; }
+}
+@media all and (min-width:320px) and (max-width:767px) {
+body { font-size: 12px; line-height: 18px; overflow:hidden; position:relative; height:100%}
+}
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+
+/*== 체크박스 디자인 ==*/
+
+input[type="radio"],input[type="checkbox"] {
+  visibility: hidden;
+  display:none;
+}
+label.radio {
+	cursor: pointer;
+  text-indent: 25px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  font-size:13px;
+  height: 17px;
+  line-height: 16px;
+}
+
+label.radio:before {
+  background: #fff;
+  border:1px solid #d7d7d7;
+  content:'';
+  position: absolute;
+  top:0px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  box-sizing:border-box;
+}
+
+label.radio:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	top: 5px;
+	left: 5px;
+	background: #54c0e1;
+	border-radius:50%;
+}
+
+input[type="radio"]:checked + label:after {
+	opacity: 1;
+}
+
+
+label.check {
+	cursor: pointer;
+  text-indent: 25px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  color:#777;
+  font-size:13px;
+  height:17px;
+  line-height: 16px;
+
+  vertical-align:middle;
+}
+
+label.check:before {
+  background: #f7f7f7;
+  border:1px solid #d7d7d7;
+  content:'';
+  position: absolute;
+  top:0px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  box-sizing:border-box;
+}
+
+label.check:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 0.5em;
+	height: 0.25em;
+	background: transparent;
+	top: 4.5px;
+	left: 4.5px;
+	border: 3px solid #54c0e1;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+}
+
+

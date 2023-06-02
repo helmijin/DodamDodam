@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bodeum.mapper.EduMapper">
+
+
+  <select id="getList" resultType="com.bodeum.domain.EduVO">
+  
+    select * from edu where itemnum > 0 order by itemnum desc
+   
+  </select>
+
+	<select id="getItemList" resultType="com.bodeum.domain.EduVO">
+  
+    select * from edu where itemnum = ${itemnum}
+   
+  </select>
+  
+  <select id="getGroupList" resultType="com.bodeum.domain.EdugroupVO">
+  
+   select * from edugroup where itemnum > 0 order by itemnum desc
+  
+  </select>
+
+	<select id="getGroupItemList" resultType="com.bodeum.domain.EdugroupVO">
+  
+    select * from edugroup where itemnum = ${itemnum}
+   
+  </select>
+
+	<select id="getSingleList" resultType="com.bodeum.domain.EdusingleVO">
+  
+    select * from edusingle where itemnum > 0 order by itemnum desc
+   
+  </select>
+  
+  <select id="getSingleItemList" resultType="com.bodeum.domain.EdusingleVO">
+  
+    select * from edusingle where itemnum = ${itemnum}
+   
+  </select>
+
+
+
+
+
+  <select id="getEduboardList" resultType="com.bodeum.domain.EduBoardVO">
+  <![CDATA[
+  	select 
+	boardnum,userid,title,content,bdate,cnt
+	from (
+	    select /*+ index_desc(eduboard pk_board)*/ 
+	    rownum rn, boardnum, userid, title, content, bdate,cnt
+	     from eduboard 
+	     
+	     where 
+	]]>
+	 
+	 <include refid="criterial"></include>
+	 
+	<![CDATA[
+	     rownum <= #{pageNum} * #{amount}
+	)
+	where rn > (#{pageNum}-1)*#{amount} order by
+		boardnum desc
+	]]>
+	
+  </select>
+
+
+
+  <select id="getEduboardListTotal" resultType="int">
+  	select count(*) from eduboard where 
+  	
+  	 <include refid="criterial"></include>
+  	boardnum >0
+  </select>
+  
+   <sql id="criterial">
+  	<trim prefix="(" suffix=" ) and">
+		 <foreach collection="typeArr" item="type" separator="or">
+		 	<if test="type=='T'.toString()">
+		 		title like #{keyword} 
+		 	</if>
+		 	<if test="type=='C'.toString()">
+		 		content like #{keyword} 
+		 	</if>
+	
+		 	<if test="type=='W'.toString()">
+		 		userid like #{keyword}
+		 	</if>
+		 </foreach>
+	 </trim>
+  </sql>
+  
+
+<sql id="search">
+	<choose>
+	<when test="searchOption=='all'">
+		where b.userid=m.userid
+		and
+		(title like '%'||#{keyword}||'%'
+		or content like '%'||#{keyword}||'%')
+		
+	</when>
+		<otherwise>
+		where b.userid=m.userid
+		and ${serachOption} like '%'||#{keyword}||'%'
+		</otherwise>
+	
+	</choose>
+</sql>
+
+
+
+
+<insert id="create">
+ insert into eduboard (boardnum, userid, title, content)
+     values(seq_eduboard.nextval, #{userid}, #{title}, #{content})
+</insert>
+
+<select id="read" resultType="com.bodeum.domain.EduBoardVO">
+	select * from eduboard
+	where boardnum=#{boardnum}
+
+</select>
+
+<update id="increaseViewcnt">
+	update eduboard set cnt= cnt+1
+	where boardnum = #{boardnum}
+</update>
+
+<update id="update">
+	update eduboard set
+	title = #{title},
+	content = #{content},
+	userid = #{userid},
+	where boardnum = #{boardnum}
+
+</update>
+
+<delete id="delete">
+delete from eduboard
+where boardnum = #{boardnum}
+
+</delete>
+
+
+
+
+
+</mapper>

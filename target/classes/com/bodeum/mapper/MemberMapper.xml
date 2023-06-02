@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bodeum.mapper.MemberMapper">
+
+ <insert id="insertMember">
+  	insert into member(userid, passwd, name, gender, b_year, b_month, b_day, ph1, ph2, ph3, email1, email2, sms, mailing,  agree1, agree2, agree3, grede, point)
+  	values (#{userid}, #{passwd}, #{name}, #{gender}, #{b_year}, #{b_month}, #{b_day}, #{ph1}, #{ph2}, #{ph3}, #{email1}, #{email2}, #{sms}, #{mailing}, #{agree1}, #{agree2}, #{agree3}, #{grede}, #{point} )
+  </insert>
+ 
+<select id="idcheck" parameterType="String" resultType="Integer">
+
+	select count(*) from member
+	where
+	userid=#{userid}
+</select>
+
+
+<select id="login" parameterType="String" resultType="com.bodeum.domain.MemberVO" >
+
+
+	select * from member
+	where
+	userid=#{userid} and passwd=#{passwd}
+		
+</select>
+
+
+<delete id="deleteMember">
+
+delete from member where userid=#{userid}
+
+</delete>
+
+<select id="search_id" parameterType="String" resultType="String">
+
+	select userid from member
+	where
+	name=#{name} and email1=#{email1} and email2=#{email2}
+
+</select>
+
+<select id="search_id2" parameterType="String" resultType="String">
+
+	select userid from member
+	where
+	name=#{name} and ph1=#{ph1} and ph2=#{ph2} and ph3=#{ph3}
+
+</select>
+
+
+
+
+
+
+
+
+</mapper>

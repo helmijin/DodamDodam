@@ -1,0 +1,3420 @@
+/**__________________________________보듬 영상 교육__________________________________**/
+
+/*==  Responsive  ==*/
+
+.pc-tabletVer,
+.pcVer {
+    display: block;
+}
+
+/*pc버전에서 보이게 하기*/
+
+.tabletVer {
+    display: none;
+}
+
+/*테블렛에서만*/
+
+.mobileVer {
+    display: none;
+}
+
+/*모바일에서만*/
+
+@media all and (max-width:1240px) {
+    #header .hd_wrap {
+        padding: 0 20px;
+    }
+    /**/
+    .ft_top .ft_top_wrap .row .col-50 {
+        width: 100%;
+        text-align: center;
+    }
+    .ft_top .quotation {
+        display: inline-block;
+    }
+    .ft_top .sns {
+        text-align: center;
+    }
+    /*==  Header  ==*/
+    .header .gnb {
+        margin-left: 0px;
+    }
+    .wrap_gnb {
+        width: 100%;
+    }
+    #header .right_menu {
+        width: 38%
+    }
+    .header .lnb {
+        width: 100%;
+    }
+    .header .header_inner {
+        padding: 0 20px;
+    }
+    /*==  Login  ==*/
+    #subheader .sublogo h1.logo {
+        text-align: center;
+    }
+    #subheader .sublogo h1.logo a {
+        font-size: 1.667em;
+    }
+    .subBox.whiteBox {
+        width: 95%;
+    }
+    .whiteBox.subBox .registerBox .memberBox .forgot a {
+        width: 48%;
+    }
+    /*== 회원가입 2 ==*/
+    .subBox.whiteBox.joinBox.login-step2 {
+        padding: 50px 50px;
+        width: 90%;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .loginArea {
+        padding: 0 45px 0 10px;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .agreeBoxArea {
+        padding: 0 10px 0 45px;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .loginArea .userInfo {
+        border-bottom: 0;
+    }
+    .subBox.whiteBox.joinBox .loginArea .userInfo .mail .mail1 {
+        width: 59%;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .operation .gender .radioArea input.smallInput {
+        width: 70%;
+    }
+    /*== 장바구니 ==*/
+    #cartwrapper .cart-wrap .col-70 {
+        width: 70%;
+    }
+    #cartwrapper .cart-wrap .col-30 {
+        width: 30%;
+    }
+    #cartwrapper .order-table .prd-info {
+        width: 70%;
+    }
+    #cartwrapper .order-table .col-price {
+        width: 15%;
+    }
+    #cartwrapper .order-table span.label {
+        display: none;
+    }
+    #cartwrapper .order-table .col-cancel {
+        width: 10%;
+    }
+    #cartwrapper .order-table .prd-info .imgArea {}
+    #cartwrapper .order-table .prd-info .buy-info {
+        padding-left: 20px;
+        width: 65%;
+    }
+    /*비회원 주문 조회*/
+    #cartwrapper .noMemeberOrder .order-table.payment-table tr {
+        display: table-row;
+    }
+    #cartwrapper .noMemeberOrder .order-table.payment-table thead th {
+        display: table-cell
+    }
+    #cartwrapper .noMemeberOrder .order-table .prd-info {
+        width: 70%;
+        display: table-cell;
+    }
+    #cartwrapper .noMemeberOrder .order-table .col-price {
+        width: 15%;
+        display: table-cell;
+    }
+    #cartwrapper .noMemeberOrder .order-table .col-orderState {
+        width: 15%;
+        display: table-cell;
+    }
+    #cartwrapper .noMemeberOrder table.order-table.payment-table colgroup col {
+        width: 100%;
+    }
+    #cartwrapper .noMemeberOrder table.order-table.payment-table colgroup col[width="60%"] {
+        width: 70% !important;
+    }
+    #cartwrapper .noMemeberOrder table.order-table.payment-table colgroup col[width="20%"] {
+        width: 15%;
+    }
+    #cartwrapper .noMemeberOrder table.order-table.payment-table colgroup col {
+        width: 100%;
+    }
+    /*== 결제하기 ==*/
+    .payment-table {
+        max-width: 100%
+    }
+    .payment-table .prd-info {
+        width: 85%;
+    }
+    .payment-table .col-price {
+        width: 15%;
+    }
+    .payment-table span.label {
+        display: none;
+    }
+    #cartwrapper .order-prdInfoWrap .order-summary .button-area a.blueBtn {
+        float: none;
+    }
+    .rightBlock {
+        padding: 35px 0px 80px 250px;
+    }
+    .rightBlock .moidify .loginArea {
+        padding: 0 15px 0 0px;
+        max-width: 50%;
+        width: 50%;
+    }
+    .rightBlock .moidify .agreeBoxArea {
+        max-width: 50%;
+        width: 50%;
+        padding: 0 0 0 15px;
+    }
+    .rightBlock .moidify .userInfo .fullInput,
+    .rightBlock .moidify .userInfo input[type="text"] {
+        font-size: 0.938em;
+    }
+    #cartwrapper .order-prdInfoWrap {
+        margin-left: 230px;
+    }
+    .order-summary dl dt {
+        padding-right: 0
+    }
+    /*주문완료*/
+    .order-complete .completetitle {
+        margin-bottom: 10px;
+    }
+    /*주문완료*/
+    .order-complete .completetitle {
+        margin-bottom: 15px;
+        height: 20px;
+        line-height: 20px;
+        text-align: left;
+    }
+    #cartwrapper .order-complete .complete-txt {
+        text-align: center;
+    }
+    #cartwrapper .order-complete .complete-txt h5 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+    #cartwrapper .order-complete .complete-txt div {
+        font-size: 16px;
+        color: #555;
+    }
+    #cartwrapper .order-complete .complete-txt .order-num {
+        border: 4px solid #eee;
+        padding: 25px 15px;
+        margin: 30px 0 50px;
+    }
+    #cartwrapper .order-complete .complete-txt li {
+        font-size: 14px;
+        color: #333;
+        line-height: 21px;
+    }
+    #cartwrapper .order-complete .complete-txt li strong {
+        font-size: 14px;
+        color: #269cd3;
+    }
+    /* 패키지,그룹레슨 상세 */
+    .prdInfoWrap {
+        left: auto;
+        right: 20px;
+        margin-left: 0;
+    }
+    .prdInfoWrap.sticky {
+        left: auto;
+        right: 15px;
+        margin-left: 0;
+    }
+    .prdInfoWrap.sticky-start {
+        margin-top: -120px;
+    }
+    .prdInfoWrap.sticky.sticky-start {
+        margin-top: -29px;
+    }
+    /*쿠폰*/
+    .mypageGrayBox .couponDivLeft {
+        padding: 0 5%;
+    }
+    .mypageGrayBox .couponDivLeft .divWrap input.fullInput {
+        width: 80%;
+        margin-right: 0px;
+    }
+    .mypageGrayBox .couponDivLeft .divWrap .srchBtn {
+        width: 18%;
+        float: right;
+    }
+    .mypageGrayBox .couponDivLeft .divWrap .srchBtn a {
+        width: 100%;
+    }
+    .mypageGrayBox .couponDivRight {
+        padding: 0 5%;
+    }
+    /*====== 고객센터 ======*/
+    /*FAQ*/
+    .mypageGrayBox {
+        display: inline-block;
+        width: 100%;
+    }
+    .cs-main .mypageGrayBox .faqDiv {
+        width: 100%;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .mypageGrayBox .faqDiv {
+        width: 60%;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .mypageGrayBox .faqDiv h4 {
+        font-size: 18px;
+        color: #333;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+    .mypageGrayBox .faqDiv .divWrap {}
+    .mypageGrayBox .faqDiv .divWrap input.fullInput {
+        width: 85%;
+        margin-right: 3px;
+    }
+    .mypageGrayBox .faqDiv .divWrap .srchBtn {
+        width: 13%;
+        float: right;
+    }
+    .mypageGrayBox .faqDiv .divWrap .srchBtn a {
+        width: 100%;
+    }
+    /*결제하기*/
+    #cartwrapper .cart-wrap .info-write td span {
+        padding: 0 6px 0 0;
+    }
+    #cartwrapper .cart-wrap .info-write td .pointTxt {
+        width: 100%;
+        display: inline-block;
+        line-height: normal;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    /**/
+    .eduRequest .rightAgree .agreebox>div strong {
+        width: 100%;
+        display: inline-block;
+    }
+    .eduRequest .rightAgree .agreebox>div.box {
+        white-space: normal;
+    }
+    .eduRequest .rightAgree .agreebox>div.box p {
+        white-space: normal;
+    }
+    .subBox.whiteBox.joinBox .agreeBoxArea .mail {
+        margin-top: 13px;
+    }
+    .subBox.whiteBox.joinBox .agreeBoxArea .mail .color-gray {
+        margin-top: 0
+    }
+    /*마이페이지 > 개별토픽*/
+    .rightBlock .topicthumList td.title .lesson-btn-wrap {
+        width: 76%;
+    }
+    /*내강의*/
+    .rightBlock .lesson-bottom .btn a {
+        width: 30%;
+        font-size: 13px;
+        margin-right: 1%;
+    }
+    .rightBlock .lesson-bottom .lesson-box:nth-child(3) .btn a {
+        width: 49%;
+    }
+    .rightBlock .lessonthumList .title .imgArea {
+        width: 220px;
+        display: inline-block;
+        float: left;
+    }
+    .rightBlock .lessonthumList .title .imgArea img {
+        width: 100%;
+    }
+    .rightBlock .lessonthumList .title .titleArea {
+        padding-left: 260px;
+        padding-top: 10px;
+    }
+    .rightBlock .lessonthumList .title .titleArea a {}
+    .rightBlock .lessonthumList .title .titleArea div.date span {
+        color: #777;
+        width: auto;
+        line-height: 17px;
+        float: left;
+    }
+    .rightBlock .lessonthumList .title .titleArea div.d-day div.date span {
+        margin-bottom: 0px;
+    }
+    .rightBlock .lessonthumList .title .titleArea div.d-day span {
+        color: #777;
+        margin-bottom: 5px;
+    }
+    .rightBlock .lessonthumList .title .titleArea div.d-day strong {
+        color: #269cd3;
+        font-weight: 500;
+    }
+    .rightBlock .lessonthumList .title .titleArea div.d-day,
+    .rightBlock .lessonthumList .title .titleArea div.date {
+        line-height: 20px;
+    }
+    .rightBlock .lessonthumList .state .state-btn a {
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+    }
+    .rightBlock .lessonthumList .state .state-btn a:last-child {
+        margin-right: 0;
+        float: right;
+    }
+    /*== 마이페이지- 리뷰 ==*/
+    .review-table {
+        width: 100%
+    }
+    .review-table colgroup {
+        display: none;
+    }
+    .review-table .prd-info {}
+    .review-table .prd-info .buy-info {
+        width: 488px;
+    }
+    .review-table span.label {
+        display: none;
+    }
+}
+
+@media all and (max-width:1100px) {
+    /*== 장바구니 ==*/
+    #cartwrapper .cart-wrap .col-70 {
+        width: 100%;
+    }
+    #cartwrapper .cart-wrap .col-30 {
+        width: 100%;
+    }
+    #cartwrapper .cart-wrap p.color-gray {}
+    .order-summary {
+        margin-top: 30px;
+    }
+    .order-summary .button-area a {
+        width: 49%;
+    }
+    .order-summary .button-area a.whiteBtn {
+        float: right;
+    }
+    /*교육방법 그룹레슨, 개인레슨*/
+    .individual-lesson .col-33 .lessonWrap .square:after {
+        padding-bottom: 51.8%;
+    }
+    /*==세미나==*/
+    .seminar_list .whiteBoxWrap .infoArea .explain {
+        line-height: 16px;
+        height: 32px;
+        margin-bottom: 20px;
+    }
+    /*결제하기*/
+    #cartwrapper .order-prdInfoWrap {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        left: auto;
+        margin-top: 0;
+        top: 0 !important;
+        right: auto;
+        margin-left: 0;
+    }
+    #cartwrapper .order-prdInfoWrap.sticky-fixed {
+        position: relative;
+    }
+    #cartwrapper .cart-wrap .info-write td .short-input {
+        width: 50%;
+    }
+    #cartwrapper .cart-wrap .info-write td.phoneArea .srchFilter select {
+        width: 15%;
+    }
+    #cartwrapper .cart-wrap .info-write td.phoneArea .phone {
+        width: 15%;
+    }
+    #cartwrapper .cart-wrap .info-write td span {
+        padding: 0 6px 0 5px;
+    }
+    #cartwrapper .cart-wrap .info-write td .pointTxt {
+        width: 100%;
+        display: inline-block;
+        line-height: normal;
+        padding-left: 0;
+    }
+    /*== 마이페이지 ==*/
+    .leftBlock {
+        margin-left: 15px;
+    }
+    .rightBlock {
+        padding: 35px 15px 80px 250px
+    }
+    .guestInq .rightBlock {
+        padding-left: 15px;
+    }
+    .mypage-srchFilter .divWrap {
+        margin-top: 5px;
+    }
+    /*내강의*/
+    .rightBlock .lessonthumList .title .titleArea div span {
+        width: 100%;
+        display: inline-block;
+        line-height: 17px;
+        float: left;
+    }
+    .rightBlock .lessonthumList .title .titleArea div span.period:after {}
+    /*마이페이지 메인*/
+    .mypage_index {
+        width: 100%;
+        display: inline-block;
+        padding: 70px 20px;
+    }
+    /*레슨현황*/
+    .rightBlock .lessonStatusList .title .titleArea a {
+        margin-bottom: 0;
+    }
+    .rightBlock .lessonStatusList .title .titleArea div {
+        bottom: -5px;
+    }
+    .rightBlock .lessonStatusList .title .titleArea div span {
+        font-size: 12px;
+        display: inline-block;
+        line-height: 17px;
+        float: left;
+    }
+    .rightBlock .lessonStatusList .title .titleArea div span.period:after {
+        top: 3px;
+        height: 12px;
+    }
+    .rightBlock .lessonStatusList .title .titleArea div span.lessonDate {
+        margin-top: 0px;
+    }
+}
+
+@media all and (min-width:991px) and (max-width:1048px) {
+    .rightBlock .lessonthumList .title .titleArea {
+        padding-top: 0px;
+    }
+    .rightBlock .lessonthumList .title .titleArea div span.period:after {
+        display: none;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    .pannel .explain .exp-top {}
+    .pannel .explain .exp-top .title {
+        font-weight: 500;
+        margin-bottom: 15px;
+        height: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+    .pannel .explain .exp-top .txt {
+        font-size: 0.938em;
+        font-weight: 400;
+        color: #555;
+        line-height: 20px;
+        margin-bottom: 18px;
+        min-height: 60px;
+    }
+    .pannel .explain .exp-bottom {}
+    .pannel .explain .exp-bottom .day {
+        height: 22px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+    .pannel .explain .exp-bottom .place {
+        height: 22px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        margin-bottom: 0;
+    }
+    .pannel .explain .exp-bottom .price {
+        font-weight: 700;
+    }
+    .pannel .explain .exp-bottom .price strong {
+        font-size: 1.125em;
+        color: #061f5c;
+        font-weight: 700;
+    }
+}
+
+@media all and (max-width:990px) {
+    .pcVer {
+        display: none;
+    }
+    /*pc버전에서 안보이게 하기*/
+    .pc-tabletVer {
+        display: block;
+    }
+    /*pc에서 테블릿버전에서만 보이게 하기*/
+    .tabletVer {
+        display: block;
+    }
+    /*모바일-테블릿버전에서만 보이게 하기*/
+    .mobileVer {
+        display: none;
+    }
+    /*모바일-테블릿버전에서만 보이게 하기*/
+    select {
+        font-size: 13px;
+    }
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        font-size: 13px;
+    }
+    #wrapper .containerWrap {
+        padding-top: 0px;
+    }
+    #wrapper.customer .containerWrap {
+        padding-top: 0px;
+    }
+    #subwrapper {
+        padding-top: 0px;
+    }
+    #cartwrapper #wrapper .content {
+        padding-top: 0px;
+    }
+    #m_header.fixed {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+    body {
+        /*모바일에서 단어별로 줄바꿈*/
+        -ms-word-break: keep-all;
+        word-break: keep-all;
+        /* Non standard for webkit */
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    /*==  Header  ==*/
+    .pcHeader {
+        display: none;
+    }
+    #header .hd_wrap .hd {
+        height: auto;
+    }
+    #header .hd_wrap .hd .wsmenu {
+        width: 300px;
+    }
+    #header .hd_wrap .hd nav .wsmenu-list>li>a.navtext {
+        padding: 9px 20px 8px 20px
+    }
+    .wsmobileheader {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        z-index: 101
+    }
+    .wsmobileheader .mobileheder-wrap {
+        height: 50px;
+    }
+    .wsmobileheader .mobileheder-wrap .logo {
+        text-align: center;
+        height: 50px;
+    }
+    .wsmobileheader .mobileheder-wrap .logo img {
+        width: 110px;
+        margin: 12px 0px;
+    }
+    .wsmenu02 {
+        display: block;
+    }
+    #header .hd_wrap .hd .right_menu,
+    #header .hd_wrap .hd .smllogo {
+        display: none;
+    }
+    .gnb-bnr {
+        background: #f3f3f3;
+        text-align: center;
+    }
+    .gnb-bnr img {}
+    /*==  Footer  ==*/
+    #footer .ft_wrap {
+        margin: 20px auto;
+    }
+    .ft_top {
+        padding: 25px 20px 20px;
+    }
+    .ft_top .ft_top_wrap .row .col-50 {
+        width: 100%;
+        text-align: center;
+    }
+    .ft_top .quotation {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .ft_top .sns {
+        text-align: center;
+    }
+    #footer .ft_wrap .ft_menu ul {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    #footer .ft_wrap .ft_menu li {
+        float: none;
+        display: inline-block;
+    }
+    #footer .ft_wrap .ft_bottom .address {
+        text-align: center;
+    }
+    .bodeumShop.mobileVer {
+        margin: 10px 0px 0;
+        display: block;
+    }
+    .bodeumShop img {
+        max-width: 350px;
+    }
+    /*==  Login 레이아웃  ==*/
+    .subBox.whiteBox {
+        width: 90%;
+    }
+    /* 로그인 */
+    .subBox.whiteBox .loginArea .loginBoxArea {
+        width: 100%;
+    }
+    .whiteBox.subBox .loginArea .loginInput input {
+        height: 40px;
+    }
+    #subwrapper {
+        background: #f8f6e9 url('../img/loginBg.jpg')no-repeat top left;
+    }
+    #subwrapper .containerWrap {
+        min-height: 648px;
+    }
+    .subBox.whiteBox .registerBox .memberBox h4 {
+        margin-bottom: 5px;
+    }
+    .subBox.whiteBox .registerBox .memberBox p {
+        margin-bottom: 20px;
+        line-height: 19px;
+    }
+    .subBox.whiteBox .registerBox .memberBox .noMember {
+        margin: 0px 0 36px;
+    }
+    .subBox.whiteBox .registerBox .memberBox .forgot {
+        margin: 20px 0 36px;
+    }
+    .subBox.whiteBox.joinBox .loginArea .loginInput a.whiteBtn,
+    .subBox.whiteBox.joinBox .agreeBoxArea a.whiteBtn {
+        font-size: 12px;
+    }
+    /*== 회원가입 2 ==*/
+    .subBox.whiteBox.joinBox .agreeBoxArea .memberBox .joinAgree:first-child {
+        margin-top: 25px;
+    }
+    .subBox.whiteBox.joinBox .agreeBoxArea .memberBox .joinAgree {
+        margin-top: 15px;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .agreeBoxArea .memberBox .btnarea,
+    .subBox.whiteBox.joinBox .agreeBoxArea.uploadArea .btnarea {
+        margin-top: 25px;
+    }
+    .subBox.whiteBox.joinBox.login-step2 {
+        padding: 50px 20px;
+        width: 60%;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .loginArea {
+        padding: 0 10px 0 10px;
+        width: 100%;
+        border-right: 0;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .agreeBoxArea {
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .operation {
+        border-bottom: 1px dashed #dedede;
+    }
+    .subBox.whiteBox.joinBox.login-step2.login_input_step .loginArea {
+        padding: 0 10px 0 10px;
+        width: 100%;
+        border-right: 0;
+    }
+    .subBox.whiteBox.joinBox.login-step2.login_input_step .agreeBoxArea {
+        padding: 0 10px 0 10px;
+        width: 100%;
+        border-left: 0
+    }
+    .subBox.whiteBox.joinBox .loginArea .userInfo .mail {
+        margin-bottom: 13px;
+    }
+    .subBox.whiteBox.joinBox .loginArea .userInfo .mail .mail1 {
+        width: 59%;
+    }
+    .subBox.whiteBox.joinBox .loginArea .userInfo select {
+        font-size: 12px;
+    }
+    .subBox.whiteBox.joinBox.login-step2 .operation .gender .radioArea input.smallInput {
+        width: 70%;
+        float: none;
+    }
+    .subBox.whiteBox.joinBox.joinComplete p.txt {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .subBox.whiteBox.joinBox.joinComplete .btnarea {
+        margin-top: 25px;
+    }
+    .subBox.whiteBox.joinBox .loginArea .loginBoxArea .add-dogInfo li a {
+        font-size: 14px;
+    }
+    /*==  Contents  ==*/
+    #wrapper {
+        width: 100%;
+        margin: 50px auto 0;
+        min-width: 300px;
+        overflow-x: hidden;
+    }
+    /*공통*/
+    .page-title-menu {
+        height: 50px;
+    }
+    .page-sub-title strong {
+        font-size: 24px;
+    }
+    /* 교육신청 리스트 */
+    .request_list {
+        margin-top: 30px;
+    }
+    .request_list .whiteBox .imgArea {
+        width: 50%;
+    }
+    .request_list .whiteBox .imgArea img {
+        max-width: 100%
+    }
+    .request_list .whiteBox .infoArea {
+        width: 50%;
+    }
+    .request_list .whiteBox .infoArea2 {
+        width: 100%;
+        border-top: 1px solid #eee;
+        padding-top: 25px;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .request_list .info2 {
+        min-height: auto;
+    }
+    .request_list .icon {
+        height: 60px;
+    }
+    .request_list .info {
+        width: 100%;
+        display: inline-block;
+        float: left;
+        vertical-align: top;
+        padding-right: 0;
+        min-height: auto;
+    }
+    .request_list .explain {
+        width: 100%;
+        float: left;
+        display: inline-block;
+        margin-top: 0px;
+    }
+    .request_list .explain ul li {
+        font-size: 1.000em;
+    }
+    .request_list .explain ul li:last-child {
+        padding-bottom: 0;
+    }
+    .request_list .btnArea {
+        position: relative;
+        bottom: auto;
+        margin-top: 30px;
+    }
+    .request_list .info:after {
+        display: none;
+    }
+    .request_list .info2 .priceWrap {
+        position: relative;
+        bottom: auto;
+        margin-top: 15px;
+        margin-bottom: 0
+    }
+    .request_list .info2 .cost {
+        margin-bottom: 12px;
+    }
+    .request_list .info2 .cost span,
+    .request_list .info2 .price span {
+        font-size: 1.000em;
+    }
+    /* 그룹레슨 */
+    .eduApplication .row .col-25 {
+        width: 33.3333333333%;
+    }
+    /*개별토픽*/
+    .eduApplication .row .col-25:nth-child(1) .pannel {
+        margin-top: 0;
+    }
+    .eduApplication .row .col-25:nth-child(2) .pannel {
+        margin-top: 0;
+    }
+    .eduApplication .row .col-25:nth-child(3) .pannel {
+        margin-top: 0;
+    }
+    .eduApplication .row .col-25:nth-child(4) .pannel {
+        margin-top: 20px;
+    }
+    .eduApplication.topicEdu .row .col-25:nth-child(4) .pannel {
+        margin-top: 20px;
+    }
+    /*교육방법 그룹레슨, 개인레슨*/
+    .individual-lesson {
+        display: inline-block;
+        width: 100%;
+    }
+    .individual-lesson .col-33 .lessonWrap {
+        width: 50%;
+        float: left;
+    }
+    .individual-lesson .col-33 .imgArea {
+        width: 50%;
+        float: left;
+    }
+    .individual-lesson .col-33 .lessonWrap .square:after {
+        display: none;
+    }
+    .individual-lesson .col-33 .lessonWrap .content {
+        position: relative;
+    }
+    .individual-lesson .col-33 .title {
+        font-size: 28px;
+        text-align: left;
+        font-weight: 500;
+        margin-bottom: 6%;
+        margin-top: 0%;
+    }
+    .individual-lesson .col-33 .txt {
+        font-size: 13px;
+        line-height: 21px;
+        color: #555;
+        margin-bottom: 0%;
+    }
+    .individual-lesson .row .col-33 {
+        width: 100%;
+    }
+    .individual-lesson .row .col-45 {
+        width: 100%;
+    }
+    .individual-lesson .row .col-22 {
+        width: 100%;
+    }
+    .individual-lesson .row .col-45 .imgArea {
+        margin-top: 10px;
+    }
+    .individual-lesson .row .col-22 .imgArea {}
+    .individual-lesson .row .col-22 .imgArea .square {
+        width: 50%;
+        float: left;
+        margin-top: 10px;
+    }
+    .individual-lesson .row .col-22 .imgArea .square:last-child {
+        margin-top: 10px;
+    }
+    .individual-lesson .row .col-22 .imgArea .square .content {
+        padding-right: 5px;
+    }
+    .individual-lesson .row .col-22 .imgArea .square:last-child .content {
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+    .bodeumTrainer ul li.trainer1 {
+        background: url('../img/trainer_t1.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer2 {
+        background: url('../img/trainer_t2.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer3 {
+        background: url('../img/trainer_t3.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer4 {
+        background: url('../img/trainer_t4.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer5 {
+        background: url('../img/trainer_t5.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer6 {
+        background: url('../img/trainer_t6.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer7 {
+        background: url('../img/trainer_t7.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer8 {
+        background: url('../img/trainer_t8.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer9 {
+        background: url('../img/trainer_t9.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer10 {
+        background: url('../img/trainer_t10.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer11 {
+        background: url('../img/trainer_t11.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer12 {
+        background: url('../img/trainer_t12.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer13 {
+        background: url('../img/trainer_t13.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer14 {
+        background: url('../img/trainer_t14.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer15 {
+        background: url('../img/trainer_t15.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer16 {
+        background: url('../img/trainer_t16.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer17 {
+        background: url('../img/trainer_t17.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer18 {
+        background: url('../img/trainer_t18.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer19 {
+        background: url('../img/trainer_t19.png')no-repeat center right;
+        background-size: cover;
+    }
+    .bodeumTrainer ul li.trainer20 {
+        background: url('../img/trainer_t20.jpg')no-repeat center right;
+        background-size: cover;
+    }
+    /*
+훈련사 이미지 변경
+.bodeumTrainer ul li.trainer숫자{background:url('../img/파일명')no-repeat center right; background-size: cover;}
+위의 코드 복사해서 숫자라고 써져있는 부분에 추가한 훈련사 클라스 숫자를 넣어주세요.
+파일명 에는 저장한 파일명 넣어주세요.(확장자포함해서 넣어주세요.)
+*/
+    .bodeumTrainer ul li div.trainerName {
+        font-size: 26px;
+        top: 50%;
+        margin-top: -14px;
+        left: 15px;
+        padding-bottom: 10px;
+    }
+    .bodeumTrainer ul li div.trainerName:before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #061f5c;
+        position: absolute;
+        bottom: 0;
+    }
+    /*교육신청페이지*/
+    .eduRequest .rightAgree .agreebox {
+        margin-top: 15px;
+    }
+    .eduRequest .rightAgree .agreebox:first-child {
+        margin-top: 0;
+    }
+    .eduRequest .rightAgree .agreebox>div strong {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .eduRequest .rightAgree .agreebox>div p {
+        white-space: normal;
+        font-size: 13px;
+    }
+    .eduRequest .rightAgree .agreebox>div.box {
+        white-space: normal;
+        padding: 20px 15px;
+        font-size: 13px;
+    }
+    .eduRequest .prdInfoWrap .prdInfo dl {
+        float: left;
+    }
+    .eduRequest .prdInfoWrap .prdInfo dl dt {
+        padding: 11px 10px 13px;
+    }
+    .eduRequest .prdInfoWrap .prdInfo dl dd {
+        padding: 11px 10px 13px;
+    }
+    .eduRequest .prdInfoWrap p.txt {
+        display: inline-block;
+        width: 100%;
+    }
+    /*커뮤니티*/
+    /*교육후기*/
+    .reviewList .listUL ul li div.review-info .title a {
+        color: #555;
+        font-size: 15px;
+    }
+    .reviewList .listUL ul li div.review-info .user-kind .user,
+    .reviewList .listUL ul li div.review-info .user-kind .count {
+        font-size: 12px;
+    }
+    /* 패키지,그룹레슨 상세 */
+    .prdInfoWrap {
+        right: 14px
+    }
+    .prdInfoWrap.sticky-abs {
+        position: absolute;
+        right: 0;
+        width: calc(47% - 5px)
+    }
+    #prdDetail2 .prdDetailExp-1>.title {
+        font-size: 24px;
+        padding-top: 0;
+        line-height: 32px;
+    }
+    #prdInfoWrap .prdInfo dl dt {
+        font-size: 14px;
+        padding: 0 15px 0 0;
+    }
+    #prdInfoWrap .prdInfo dl dd {
+        font-size: 14px;
+        padding: 0 0 0 15px;
+    }
+    #prdInfoWrap .prdInfo dl dd.point strong {
+        font-size: 15px;
+    }
+    #prdInfoWrap .prdInfo dl dd.point span {
+        font-size: 15px;
+    }
+    #prdInfoWrap .prdInfo dl dd .sale_price {
+        font-size: 22px;
+    }
+    #prdInfoWrap .prdInfo dl dd.price strong {
+        font-size: 18px;
+    }
+    #prdInfoWrap .prdInfo dl dd span {
+        font-size: 16px;
+    }
+    #prdInfoWrap .prdInfo dl dd>p {
+        font-size: 14px;
+    }
+    #prdInfoWrap .prdInfo .prd-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #prdDetail2 .prdDetailExp-1>div {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .topic-detail .fullpackage div {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #prdDetail2 .prdDetailExp-1>div .title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    #prdDetail2 .prdDetailExp-1>div>ul li {
+        line-height: 22px;
+    }
+    .relation .relationWrap .prd-title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    #prdDetail2 .prdDetailExp-1 .icon {
+        margin-bottom: 15px;
+    }
+    #prdDetail2 .prdDetailExp-1 .sub-title {
+        font-size: 14px;
+    }
+    #prdDetail2 .prdDetailExp-1 .package div {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #prdDetail2 .prdDetailExp-1 .edu-movieBox .txt {}
+    #prdDetail2 .prdDetailExp-1>div>.txt {
+        line-height: 22px;
+    }
+    .prdVideo {
+        padding: 70px 15px 70px;
+    }
+    .videoReview {
+        padding: 70px 15px 70px;
+    }
+    .relation .relationWrap .row .col-25 {}
+    .relation .relationWrap .pannel .explain .exp-top .title {
+        height: 22px;
+        display: inline-block;
+        white-space: nowrap
+    }
+    .relation .relationWrap .relation-pannel .title a {
+        font-size: 13px;
+    }
+    .prdVideo .prdVideoWrap .row .col-25 {
+        width: 33.3333333333%;
+        padding-bottom: 20px;
+    }
+    .prdVideo .prdVideoWrap .pannel {
+        margin-bottom: 0px;
+    }
+    .page-sub-title {
+        padding: 0 10px 20px;
+    }
+    .page-sub-title span {
+        margin-top: 2px;
+    }
+    .prdVideo .prdVideoWrap .pannel .explain .exp-top .title {
+        font-size: 1.167em
+    }
+    .prdVideo .prdVideoWrap .pannel .explain .exp-top .txt {
+        font-size: 1.000em
+    }
+    .pannel .explain {
+        margin: 10px 10px;
+    }
+    .pannel .explain .exp-top .title {
+        font-size: 1.143em;
+        margin-bottom: 12px;
+    }
+    .pannel .explain .exp-bottom .price {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .pannel .explain .exp-bottom .price strong {
+        font-size: 18px;
+    }
+    .pannel .explain .exp-bottom .place {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .pannel .explain .exp-bottom .day {
+        font-size: 14px;
+    }
+    .videoReviewWrap .pannel {
+        display: inline-block;
+        padding: 20px 15px;
+        width: 100%;
+    }
+    .videoReviewWrap .pannel .profile {
+        text-align: center;
+        display: inline-block;
+        float: right;
+    }
+    .videoReviewWrap .pannel .title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .videoReviewWrap .pannel .title a {
+        line-height: 23px;
+    }
+    .videoReviewWrap .pannel .txt {
+        font-size: 13px;
+        line-height: 20px;
+        height: 60px;
+    }
+    .videoReviewWrap .pannel .name {
+        font-size: 12px
+    }
+    /*교육방법 공통*/
+    .edu-video.inner-contents .section,
+    .edu-video2.inner-contents .section,
+    .edu-video3.inner-contents .section,
+    .edu-video4.inner-contents .section,
+    .edu-video5.inner-contents .section {
+        padding: 70px 15px !important;
+    }
+    .eduLessonWrap .inner-contents .section {
+        padding: 70px 15px !important;
+    }
+    .education-page-title ul li {
+        margin: 0 39px;
+    }
+    .education-lesson .txt p {
+        white-space: normal;
+    }
+    .education-lesson.edu-groupLesson .row .col-50 {
+        vertical-align: top;
+    }
+    .education-lesson .row .col-50 {
+        width: 100%;
+    }
+    .education-lesson .row .col-50:first-child {
+        float: none;
+        text-align: center;
+        width: 80%;
+    }
+    .education-lesson .row .col-50:last-child {
+        width: 100%;
+        margin-left: 0
+    }
+    /*교육방법 -> 영상교육*/
+    .tab_container {
+        padding-bottom: 0;
+    }
+    .tab_container .tab_content .txt {
+        line-height: 19px;
+    }
+    .stepArea {
+        width: 85%;
+    }
+    .stepArea div {
+        width: 25%;
+        box-sizing: border-box;
+        padding: 0 15px;
+        float: left;
+    }
+    .stepArea div img {
+        max-wdith: 100%;
+        width: 100%;
+    }
+    .edu-video-wrap .edu-video-top .txtArea div.number {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .edu-video-wrap .edu-video-top .txtArea h4 {
+        font-size: 27px;
+    }
+    .edu-video-wrap .edu-video-top .txtArea div {
+        line-height: 20px;
+        white-space: normal;
+        font-size: 13px;
+    }
+    .edu-video-wrap .edu-video-top .txtArea {
+        vertical-align: top;
+    }
+    .edu-video-wrap .edu-video-top>div:nth-child(2) {
+        padding-left: 5px;
+    }
+    .edu-video-wrap .edu-video-top.edu-video-center .txtArea {
+        top: 0;
+        padding-left: 0;
+        padding-right: 5px;
+    }
+    .tab_container .tab_content .only-benefit .title {
+        margin-bottom: 15px;
+    }
+    .tab_container .tab_content .only-benefit .txt2 {
+        white-space: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .edu-video2 .edu-video-method .stepArea div img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .edu-video2 .edu-video-method img {
+        width: 72px;
+    }
+    .edu-video2 .edu-video-method .edu-pannel .imgArea .keyword {
+        bottom: -30px;
+    }
+    .edu-video2 .edu-video-method .edu-pannel .txt {
+        padding: 40px 30px 30px;
+    }
+    .edu-video2 .edu-video-method .page-sub-txt {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .tab_container .tab_content .txt {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    /*교육방법 -> 개인레슨*/
+    .education-lesson h4 {
+        margin-bottom: 10px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .education-lesson .txt {
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .education-lesson .txt p.mb-20 {
+        margin-bottom: 15px;
+    }
+    .education-lesson .individual-txt2 {
+        padding: 0 0 0 0px;
+    }
+    /*== 장바구니 ==*/
+    #cartwrapper .sub-page-title {
+        font-size: 27px;
+    }
+    #cartwrapper .cart-wrap p.color-gray,
+    #cartwrapper .cart-wrap p.color-red {
+        margin-bottom: 0;
+        line-height: 18px;
+    }
+    #cartwrapper .order-table .prd-info .imgArea {}
+    #cartwrapper .order-table .prd-info .buy-info {
+        padding-left: 20px;
+        width: 69%;
+    }
+    #cartwrapper .order-table .prd-info .buy-info .option p {
+        font-size: 12px;
+    }
+    #cartwrapper .order-table .prd-info .buy-info a {
+        font-size: 14px;
+    }
+    #cartwrapper .order-table tbody td .price strong {}
+    #cartwrapper .order-table tbody td .price {
+        font-size: 12px;
+    }
+    .order-summary .button-area {
+        padding: 0 0 10px;
+        width: 100%;
+        display: inline-block;
+    }
+    .order-summary .button-area a {
+        margin-top: 0
+    }
+    .order-summary .button-area a.blueBtn {
+        float: left;
+    }
+    #cartwrapper .order-table .prd-info .buy-info.nomemBuyinfo {
+        width: 75%;
+    }
+    /*결제*/
+    #cartwrapper .cart-wrap .info-btn a,
+    #cartwrapper .cart-wrap .info-write td .aBtn,
+    #cartwrapper .cart-wrap .payment-means .payment-means-btn a {
+        font-size: 12px;
+    }
+    #cartwrapper .cart-wrap .info-btn {
+        margin: 15px 0 7.5px;
+    }
+    .payment-table .prd-info .buy-info {
+        width: 324px;
+    }
+    .payment-table .prd-info .buy-info a {
+        font-size: 14px;
+    }
+    .payment-table .prd-info .buy-info .option p {
+        font-size: 12px;
+    }
+    .payment-table tbody td .price strong {}
+    .payment-table tbody td .price {
+        font-size: 12px;
+    }
+    #cartwrapper .cart-wrap .payment-means {
+        margin: 15px 0 0px;
+    }
+    /*결제하기 쿠폰선택*/
+    #cartwrapper .cart-wrap .info-write.coupon td {
+        padding: 0 0 7.5px;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table thead {
+        display: table-header-group;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table {
+        width: 100%;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table thead th {
+        font-size: 13px;
+        text-align: center;
+        color: #555;
+        border-bottom: 1px solid #d7d7d7;
+        padding: 15px 0px;
+        font-weight: 500;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table tbody td {
+        font-size: 13px;
+        text-align: center;
+        color: #555;
+        border-bottom: 1px solid #d7d7d7;
+        padding: 18px 0;
+        text-align: center;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table tbody td div.check {
+        padding-left: 10px;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table tbody td span {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table tbody td span.label {
+        display: none;
+    }
+    #cartwrapper .cart-wrap .info-write .point-table tbody td span.blue {
+        color: #269cd3;
+    }
+    .point-table,
+    #cartwrapper .cart-wrap .info-write {}
+    .point-table.myInqList tbody td {}
+    #cartwrapper .cart-wrap .info-write th,
+    #cartwrapper .cart-wrap .info-write td {}
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tbody td {
+        display: table-cell;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tbody td:nth-child(1) {
+        width: 5%;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tbody td:nth-child(2) {
+        width: 65%;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tbody td:nth-child(3) {
+        width: 15%;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tbody td:nth-child(4) {
+        width: 15%;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tr {
+        width: auto;
+        display: table-row;
+    }
+    #cartwrapper .cart-wrap .info-write .coupon-table.point-table tbody {
+        width: auto;
+        display: table-row-group;
+    }
+    /*결제 완료*/
+    #cartwrapper .order-complete .order-table thead {
+        display: block;
+    }
+    #cartwrapper .order-complete .order-table tr {
+        position: relative;
+        border-bottom: 1px solid #eee;
+        display: block;
+    }
+    #cartwrapper .order-complete .order-table tbody td {
+        border-bottom: 0;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+    #cartwrapper .order-complete .order-table .prd-info {
+        width: 100%;
+        display: block;
+    }
+    #cartwrapper .order-complete .order-table td span {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+    }
+    #cartwrapper .order-complete .order-table td span.label {
+        display: inline-block;
+    }
+    #cartwrapper .order-complete .order-table td span span span {
+        width: 100%;
+    }
+    #cartwrapper .order-complete .order-table .col-price {
+        width: 100%;
+    }
+    #cartwrapper .order-complete .order-table .col-orderState {
+        padding: 10px 10px 10px;
+    }
+    /*== 보듬이란 ==*/
+    /*회사소개*/
+    .company-bodeum .row .col-50 {
+        width: 49%;
+        display: inline-block;
+        float: none;
+    }
+    .company-bodeum .company-bottom p {
+        white-space: normal;
+    }
+    /*미디어 & 강형욱 칼럼*/
+    .communityList .row .col-25 {
+        width: 33.3333333333%;
+    }
+    .communityList.media-list .white-pannel {
+        min-height: 300px;
+    }
+    .communityList .white-pannel {
+        padding: 15px 15px;
+    }
+    .communityList .white-pannel .count {
+        bottom: 15px;
+        padding-top: 15px;
+        font-size: 12px;
+    }
+    .communityList .white-pannel .title {
+        line-height: 20px;
+    }
+    .communityList .white-pannel .title a {
+        color: #555;
+        font-size: 15px;
+    }
+    .interview-wrap .interview {
+        padding: 15px;
+    }
+    .interview-wrap .interview .exp-top .title {
+        margin-bottom: 18px;
+        line-height: 20px;
+        height: 40px;
+    }
+    .interview-wrap .interview .exp-top .title a {
+        font-size: 15px;
+    }
+    .interview-wrap .interview .exp-bottom ul li {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .interview-wrap .interview .exp-bottom {
+        padding-top: 15px;
+    }
+    /*CI*/
+    .ci-color .primary-color div div,
+    .ci-color .sub-color div div {
+        padding: 40px 15px 15px;
+        margin: 0 5px;
+    }
+    /*오시는길*/
+    .bodeum-location #map {
+        height: 400px;
+    }
+    /*==세미나==*/
+    .seminar_list .whiteBoxWrap .infoArea .explain {
+        line-height: 18px;
+        height: 34px;
+        margin-bottom: 20px;
+    }
+    .seminar_list .whiteBoxWrap .infoArea .explain2 {
+        margin-bottom: 30px;
+    }
+    .seminar_list .whiteBoxWrap .infoArea .explain2 dt {
+        line-height: 24px;
+    }
+    .seminar_list .whiteBoxWrap .infoArea .explain2 dd {
+        line-height: 24px;
+    }
+    .seminar_list .whiteBoxWrap .infoArea .btnArea {
+        position: relative;
+        bottom: auto;
+    }
+    .seminar_list .whiteBoxWrap .infoArea .btnArea a {
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+    }
+    /*== 마이페이지 ==*/
+    .rightBlock {
+        padding: 25px 0px 80px 0px
+    }
+    #wrapper .containerWrap.mypage-all-wrap {
+        padding: 0 15px;
+    }
+    .leftBlock {
+        display: none;
+    }
+    .inner-contents .mypage-section {
+        padding: 0 15px;
+    }
+    .rightBlock .lesson-title {
+        margin-bottom: 10px;
+    }
+    .inner-contents .mypage-section.guestInq {
+        padding: 0px;
+    }
+    .guestInq .rightBlock {
+        padding-left: 0px;
+    }
+    /*내강의*/
+    .rightBlock .lessonStateBox {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .rightBlock .lessonthumList .title .titleArea a {
+        font-size: 18px;
+    }
+    .rightBlock .lessonthumList .title .titleArea div.d-day span,
+    .rightBlock .lessonthumList .title .titleArea div.d-day strong {
+        font-size: 13px;
+    }
+    .rightBlock .lessonthumList .state .state-btn a {
+        font-size: 13px;
+    }
+    .rightBlock .lesson-bottom {
+        padding-top: 40px;
+    }
+    .rightBlock .lesson-bottom h4 {
+        font-size: 14px;
+    }
+    .rightBlock .lesson-bottom .txt {
+        font-size: 13px;
+    }
+    .rightBlock .lesson-bottom .btn a {
+        width: 32%;
+        float: left;
+        font-size: 12px;
+        margin-right: 2%;
+    }
+    .rightBlock .lesson-bottom .lesson-box:nth-child(2) .btn a {
+        width: 60%;
+    }
+    /*마이페이지 > 개별토픽*/
+    .rightBlock .topicthumList td.title {
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+    }
+    .rightBlock .topicthumList td {
+        width: 100%\9;
+        float: left\9;
+    }
+    /*ie9에서 width값 적용안되는 부분*/
+    .rightBlock .topicthumList td.title .imgArea {
+        width: 34%;
+        display: inline-block;
+    }
+    .rightBlock .topicthumList td.title .imgArea img {
+        width: 100%;
+    }
+    .rightBlock .topicthumList td.title .lesson-btn-wrap {
+        padding-left: 15px;
+        width: 65%;
+    }
+    .rightBlock .topicthumList td.title .titleArea {
+        width: 100%;
+    }
+    .rightBlock .topicthumList td.title .titleArea a {
+        font-size: 15px;
+    }
+    .rightBlock .topicthumList td.title .titleArea span.essential {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .rightBlock .topicthumList td.title .titleArea a span.title {
+        width: 100%;
+        display: inline-block;
+    }
+    .rightBlock .topicthumList .state {
+        width: 100%;
+        display: inline-block;
+        padding: 20px 0 0;
+        text-align: left;
+    }
+    .rightBlock .topicthumList .state a {
+        font-size: 12px;
+        text-align: center;
+    }
+    /*내강의 목록*/
+    .rightBlock .lesson-title h2 {}
+    .rightBlock .lessonList.lesson-detail-list li {
+        position: relative;
+        height: auto;
+        line-height: 0
+    }
+    .rightBlock .lessonList.lesson-detail-list li>div.title {
+        width: 100%;
+        line-height: 0
+    }
+    .rightBlock .lessonList li>div.right {
+        width: 100%;
+        float: none;
+        text-align: left;
+        position: static;
+        top: auto;
+        right: right;
+        margin-top: 0;
+        line-height: 0
+    }
+    .rightBlock .lessonList li>div.right .pc_play {
+        display: none;
+    }
+    .rightBlock .lessonList li>div.mobile_play {
+        display: block;
+        margin-left: 30px;
+        vertical-align: middle;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -10px;
+        line-height: 0;
+    }
+    .rightBlock .lessonList li>div.mobile_play a {
+        display: inline-block;
+        width: 24px;
+        text-align: center;
+        color: #555;
+        margin-top: 0px !important;
+    }
+    .rightBlock .lessonList li>div.mobile_play a.down {
+        margin-right: 10px;
+    }
+    .rightBlock .lessonList li>div.mobile_play a.down i.fa {
+        font-size: 20px;
+    }
+    .rightBlock .lessonList li>div.mobile_play a i.fa {
+        color: #555;
+        FONT-SIZE: 24PX;
+    }
+    .rightBlock .lessonList li>div.right .play {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+    .rightBlock .lessonList li>div.right .down {
+        font-size: 20px;
+    }
+    .rightBlock .lessonList li>div.right .view-date {
+        font-size: 12px;
+    }
+    .rightBlock .lessonList.lesson-detail-list li>div.title.pc_play {
+        display: none;
+    }
+    .rightBlock .lessonList.lesson-detail-list li>div.title.mobile_play {
+        display: inline-block;
+        position: static;
+        margin-left: 0;
+        right: auto;
+        top: auto;
+        margin-top: 0
+    }
+    .rightBlock .lessonList.lesson-detail-list li>div.title.mobile_play a {
+        box-sizing: border-box;
+        width: 100%;
+        display: inline-block;
+        line-height: 20px;
+        color: #555;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+    .rightBlock .lesson-title .lc_popWrap p img {
+        top: -1px;
+    }
+    /*마이페이지 > 회원탈퇴*/
+    .outReason .radioArea:last-child textarea {
+        width: 70%;
+    }
+    /*마이페이지 > 회원정보 수정*/
+    .rightBlock .moidify .mypage-modifyWrap .loginArea {
+        padding: 0 5px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .rightBlock .moidify .mypage-modifyWrap .agreeBoxArea {
+        padding: 0 5px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .rightBlock .moidify h4 {
+        font-size: 1.000em;
+    }
+    .rightBlock .moidify .uploadArea {
+        border-top: 1px dashed #dedede;
+        padding-top: 0px;
+    }
+    .rightBlock .moidify .uploadArea.pt-20 {
+        border-top: 1px dashed #dedede;
+        padding-top: 20px;
+    }
+    .rightBlock .moidify .address a.whiteBtn,
+    .rightBlock .moidify .number a.whiteBtn,
+    .rightBlock .moidify .uploadArea .upload>a {
+        font-size: 12px;
+    }
+    .rightBlock .moidify .uploadArea .upload span,
+    .rightBlock .moidify .uploadArea .txt,
+    .rightBlock .moidify .joinAgree .txt {
+        font-size: 0.923em;
+    }
+    .rightBlock .moidify .joinAgree .checkArea {
+        font-size: 1.000em;
+    }
+    /*적립금*/
+    .total-point {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 0.875em;
+        background: url('/html/common/img/pointBig.png')no-repeat 0px 2px;
+        background-size: 18px;
+        padding-left: 22px;
+        line-height: 20px;
+    }
+    .total-point strong {
+        font-size: 1.143em;
+    }
+    .total-point img {
+        width: 18px;
+    }
+    .point-txt p {
+        line-height: 18px;
+        padding-bottom: 0;
+    }
+    .point-table thead th {
+        font-size: 12px;
+        padding: 12px 0;
+        line-height: 14px;
+    }
+    .point-table tbody td {
+        font-size: 12px;
+        padding: 12px 0;
+        line-height: 14px;
+    }
+    /*반려견 정보*/
+    .rightBlock .moidify .add-dogInfo {
+        border-bottom: 0;
+        padding-bottom: 0px;
+        margin-bottom: 15px;
+    }
+    .rightBlock .moidify .add-dogInfo ul {
+        display: inline-block;
+        width: 100%;
+    }
+    .rightBlock .moidify .add-dogInfo li {
+        margin-right: 8px;
+        display: inline-block;
+    }
+    .rightBlock .moidify .add-dogInfo li.on {}
+    .rightBlock .moidify .add-dogInfo li a {
+        padding: 0 20px;
+        display: inline-block;
+        background: #fff;
+        border: 1px solid #777;
+        color: #777;
+        font-size: 1.000em;
+        border-radius: 4px;
+        height: 32px;
+        line-height: 30px;
+        box-sizing: border-box;
+    }
+    .rightBlock .moidify .add-dogInfo li.on a {
+        background: #061f5c;
+        border: 1px solid #061f5c;
+        color: #fff;
+    }
+    .rightBlock .moidify .add-dogInfo .addDog {
+        font-size: 1.000em;
+        color: #269cd3;
+        float: right;
+        line-height: 42px;
+    }
+    .rightBlock .moidify .userInfo input {
+        font-size: 12px;
+    }
+    .rightBlock .moidify .userInfo .fullInput,
+    .rightBlock .moidify .userInfo input[type="text"] {
+        font-size: 12px;
+    }
+    /*마이페이지 > 회원탈퇴*/
+    .outReason .radioArea:last-child textarea {
+        width: 70%;
+    }
+    .joinOut-box li {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+    .joinOut-box li:before {
+        top: 11px;
+    }
+    .outReason label.radio {
+        font-size: 13px;
+    }
+    .outReason .radioArea:last-child textarea {
+        font-size: 13px;
+    }
+    .rightBlock .moidify .btn a.joinOutBtn {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        text-align: right;
+        font-size: 1.000em;
+    }
+    /*1:1문의 리스트*/
+    .point-table.myInqList {
+        border-top: 1px solid #2a1f1c;
+    }
+    .point-table.myInqList tbody td.title {
+        font-size: 12px;
+    }
+    /*1:1문의 상세*/
+    .InqDetail .answerArea .title {
+        font-size: 13px;
+    }
+    .InqDetail .answerArea .title span.cate {
+        font-size: 13px;
+    }
+    .InqDetail .answerArea .date {
+        font-size: 12px;
+    }
+    .InqDetail .answerArea .answer {
+        font-size: 13px;
+    }
+    /*1:1문의 작성*/
+    .myInqWrite tbody tr:last-child td {
+        padding-bottom: 30px;
+    }
+    .guestInq .rightBlock {
+        padding: 15px 15px;
+    }
+    /*1:1문의 작성 - 주문번호검색 팝업*/
+    .orderNumberPopup {
+        margin-top: -10px;
+    }
+    .orderNumberPopup h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .orderNumberPopup .color-gray.total {
+        font-size: 12px;
+    }
+    .orderNumberPopup .color-blue {
+        font-size: 12px;
+    }
+    .orderNumberPopup .mypageGrayBox h4 {
+        font-size: 14px;
+    }
+    .point-table.myInqList.orderNumTable thead th {
+        font-size: 12px;
+    }
+    .point-table.myInqList.orderNumTable tbody td {
+        font-size: 12px;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable.order-table.payment-table tr {
+        border-bottom: 1px dashed #eee;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable.order-table.payment-table tr:last-child {
+        border-bottom: 1px solid #eee
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable tbody td span {
+        font-size: 12px;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable tbody td span.label {
+        display: inline-block;
+        width: 49%;
+        text-align: left;
+        font-size: 12px;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable tbody .sortation {
+        padding: 10px 10px 0px;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable tbody .prd-info {
+        border-bottom: 0;
+        padding: 0px 10px;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable tbody .prd-info .title-txt {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+        font-size: 12px;
+    }
+    .orderNumberPopup .order-table.payment-table.orderNumTable tbody .col-price {
+        padding: 0px 10px 10px;
+    }
+    /*레슨현황*/
+    #divTab .m-tabs li {
+        font-size: 13px;
+    }
+    .rightBlock .lessonStatusList .lesson-title {
+        float: none;
+        display: inline-block;
+        margin: 5px 0 15px 0;
+    }
+    .rightBlock .lessonStatusList select {
+        margin-bottom: 5px;
+    }
+    .rightBlock .lessonStatusList .title .titleArea .lessonCate {
+        font-size: 12px;
+    }
+    .rightBlock .lessonStatusList .title .titleArea a {
+        font-size: 16px;
+    }
+    .rightBlock .lessonStatusList .title .titleArea div span.period {
+        font-size: 12px;
+    }
+    .rightBlock .lessonStatusList .date p {
+        font-size: 12px;
+    }
+    .rightBlock .lessonStatusList .state a {
+        font-size: 12px;
+    }
+    /*쿠폰*/
+    .mypageGrayBox .couponDivLeft h4,
+    .mypageGrayBox .couponDivRight h4 {
+        font-size: 15px;
+    }
+    .mypageGrayBox .couponDivRight .available {
+        background: url('../img/couponImg_t.png')no-repeat center left;
+        background-size: 26px 26px;
+    }
+    .mypageGrayBox .couponDivLeft {
+        width: 88%;
+        padding: 0 0px 15px;
+        border-bottom: 1px dashed #d7d7d7;
+        border-right: 0;
+        margin: 0 6%;
+    }
+    .mypageGrayBox .couponDivLeft .divWrap input.fullInput {
+        width: 80%;
+        margin-right: 0px;
+    }
+    .mypageGrayBox .couponDivLeft .divWrap .srchBtn {
+        width: 18%;
+        float: right;
+    }
+    .mypageGrayBox .couponDivLeft .divWrap .srchBtn a {
+        width: 100%;
+    }
+    .mypageGrayBox .couponDivRight {
+        padding: 0;
+        width: 88%;
+        margin: 0 6%;
+        padding-top: 15px;
+    }
+    .coupon-table.point-table {
+        border-top: 0;
+        width: 100%;
+        display: inline-block;
+    }
+    .coupon-table.point-table tr,
+    .coupon-table.point-table tbody {
+        width: 100%;
+        display: inline-block;
+    }
+    .coupon-table.point-table thead th {
+        border-top: 0;
+    }
+    .coupon-table.point-table thead {
+        display: none;
+    }
+    .coupon-table.point-table tbody {
+        width: 100%;
+    }
+    .coupon-table.point-table tbody tr {}
+    .coupon-table.point-table tbody td.title {
+        border-bottom: 1px dashed #d7d7d7;
+        font-size: 12px;
+        padding: 10px 10px;
+        text-align: left;
+    }
+    .coupon-table.point-table tbody td span {
+        width: 49%;
+        display: inline-block;
+        text-align: right;
+    }
+    .coupon-table.point-table tbody td span.label {
+        display: inline-block;
+        text-align: left;
+    }
+    .coupon-table.point-table tbody td {
+        width: 100%;
+        display: block;
+        border-bottom: 0;
+        padding: 10px 10px 0;
+    }
+    .coupon-table.point-table tbody td:last-child {
+        border-bottom: 1px solid #d7d7d7;
+        padding: 10px 10px;
+    }
+    .coupon-table.point-table tbody td {
+        width: 100%\9;
+        float: left\9;
+    }
+    .coupon-table.point-table tbody td.info {
+        padding: 10px 10px 0;
+        text-align: center;
+    }
+    /*마이페이지 메인*/
+    .mypage_index {
+        width: 100%;
+        display: inline-block;
+        padding: 25px 0 80px;
+    }
+    .mypage_index .mp_box1 .user-info .name {
+        font-size: 13px;
+    }
+    .mypage_index .mp_box1 .user-info .name span {
+        font-size: 18px;
+    }
+    .mypage_index .mp_box1 .user-info .id {
+        font-size: 13px;
+    }
+    .mypage_index .mp_box1 .infobtn {}
+    .mypage_index .mp_box1 .infobtn a {
+        font-size: 13px;
+    }
+    .mypage_index .mp_box2 {
+        padding: 36px 18px;
+        min-height: 184px;
+    }
+    .mypage_index .mp_box2 .img {
+        width: 100%;
+        text-align: center;
+        margin-right: 0
+    }
+    .mypage_index .mp_box2 .img img {
+        max-width: 49px;
+    }
+    .mypage_index .mp_box2 .txt {
+        width: 100%;
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 0
+    }
+    .mypage_index .mp_box2 .txt strong {
+        font-weight: 500;
+    }
+    .mypage_index .mp_box2 .txt div {
+        color: #269cd3;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .mypage_index .mp_box2.mp_box2-1 {
+        padding: 52px 18px
+    }
+    .mypage_index .mp_box3 h4 a {
+        font-size: 16px;
+    }
+    .mypage_index .mp_box3 h4 a i.fa {
+        line-height: 24px;
+    }
+    .mypage_index .mp_box3 li .d-day {
+        font-size: 12px;
+    }
+    .mypage_index .mp_box3 li .d-day strong {
+        color: #e47896;
+        font-weight: bold;
+        margin-left: 8px;
+    }
+    .mypage_index .mp_box3 li .title {
+        font-size: 16px;
+    }
+    .mypage_index .mp_box3 li a.roundBtn {
+        font-size: 12px;
+    }
+    .mypage_index .mp_box4 h4 a {
+        font-size: 16px;
+    }
+    .mypage_index .mp_box4 h4 a i.fa {
+        line-height: 24px;
+    }
+    .mypage_index .mp_box4 ul li strong {
+        font-size: 18px;
+    }
+    /*====== 고객센터 ======*/
+    .page-cs-title strong {
+        font-size: 27px;
+    }
+    .page-cs-title p.txt {
+        margin-top: 2px;
+    }
+    /*고객센터 메인*/
+    .faqBtnList {
+        margin-bottom: 10px;
+    }
+    .cs-main .cs-container {
+        display: inline-block;
+    }
+    .cs-main .cs-container .col-70 {
+        width: 65%;
+    }
+    .cs-main .cs-container .col-30 {
+        width: 35%;
+    }
+    .cs-main .cs-main-right {
+        padding-left: 30px;
+    }
+    .cs-main .cs-main-right .csDiv h4 img {
+        width: 29px;
+    }
+    .cs-main .cs-main-right .csDiv .hours>div:first-child span {
+        width: 100%;
+        display: inline-block;
+    }
+    .cs-main .cs-main-right .csDiv .hours>div:first-child span.lunch {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .cs-main .cs-main-right .csDiv .hours>div:first-child span.lunch:before {
+        display: none;
+    }
+    /*FAQ*/
+    .mypageGrayBox.mb-50 {
+        margin-bottom: 30px;
+    }
+    .mypageGrayBox .faqDiv {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .mypageGrayBox .faqDiv {
+        padding: 0 20px;
+    }
+    .cs-main .mypageGrayBox .faqDiv {
+        padding: 10px 30px;
+    }
+    .mypageGrayBox .faqDiv h4 {
+        font-size: 15px
+    }
+    .faqList li.q {
+        padding: 18px 30px 19px;
+        font-size: 14px;
+    }
+    .faqList li.q img {
+        padding: 6px 0 0px;
+    }
+    .faqList li.a {
+        padding: 18px 30px 19px;
+        font-size: 14px;
+    }
+    /*공지사항*/
+    .cs-list .csboard-list {}
+    .cs-list .csboard-list li {
+        border: 1px solid #d7d7d7;
+        margin-top: -1px;
+        width: 100%;
+        display: inline-block;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .cs-list .csboard-list li .list-state {
+        display: inline-block;
+        width: auto;
+        margin-right: 5px;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .cs-list .csboard-list li .list-state span {
+        border-radius: 50px;
+        padding: 0 10px;
+        font-size: 12px;
+        height: 22px;
+        line-height: 20px;
+        display: inline-block;
+    }
+    .cs-list .csboard-list li .info {}
+    .cs-list .csboard-list li .info .title {
+        width: 80%;
+        display: inline-block;
+    }
+    .cs-list .csboard-list li .info .title a {
+        display: inline-block;
+        font-size: 15px;
+        color: #555;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 90%;
+        vertical-align: middle;
+    }
+    .cs-list .csboard-list li .info .date {
+        width: 18%;
+        float: right;
+        text-align: right;
+        color: #777;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    /*제휴,섭외*/
+    .line-box {
+        border: 1px solid #d7d7d7;
+        padding: 30px 30px;
+        background: #fff;
+    }
+    .alliance .cs-container .myInqWrite {
+        border: 1px solid #d7d7d7;
+        padding: 30px 20px 50px;
+    }
+    .alliance.allianceBg {
+        background: url(../img/allianceBg.jpg)no-repeat top right;
+        background-size: cover;
+    }
+    /*개인정보취급방침, 이용약관*/
+    .checkSection {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .checkSection strong {
+        font-size: 14px;
+    }
+    .checkSection b {
+        font-size: 12px;
+    }
+    /*주문관리*/
+    .order-table.payment-table thead th {
+        max-width: 100%;
+        display: block;
+        font-size: 12px;
+        padding: 0 10px;
+        border-bottom: 0;
+    }
+    .order-table.payment-table thead th div.order-date {
+        width: 50%;
+        float: left;
+    }
+    .order-table.payment-table thead th div.order-date span {
+        font-size: 12px;
+    }
+    .order-table.payment-table thead th div.order-date span a {
+        font-size: 12px;
+    }
+    .order-table.payment-table thead th div.order-btn {
+        width: auto;
+        float: right;
+    }
+    .order-table.payment-table tbody td>span.label {
+        display: inline-block;
+        width: 49%;
+        text-align: left;
+    }
+    .order-table.payment-table tbody td>span {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+        font-size: 12px;
+    }
+    .order-table.payment-table tr {
+        position: relative;
+        border-bottom: 1px solid #eee;
+        display: block;
+        max-width: 100%;
+    }
+    .order-table.payment-table tbody td {
+        width: 100%\9;
+        float: left\9;
+        width: 100%\10;
+        float: left\10;
+    }
+    .order-table.payment-table tbody td {
+        border-bottom: 0;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        display: block;
+    }
+    .order-table.payment-table tbody td .price {
+        font-size: 12px;
+    }
+    .order-table.payment-table tbody .col-kinds,
+    .order-table.payment-table .col-price {
+        padding: 5px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        display: inline-block;
+    }
+    .order-table.payment-table tbody .checkboxArea {
+        width: 50px;
+        display: block;
+    }
+    .order-table.payment-table tbody .prd-info {
+        width: 100%;
+        display: block;
+        padding: 10px 10px 10px;
+        border-bottom: 1px dashed #d8d8d8;
+    }
+    .order-table.payment-table tbody .col-price {
+        width: 100%;
+        display: block;
+    }
+    .order-table.payment-table tbody td.col-orderState {
+        width: 100%;
+        display: block;
+        padding: 5px 10px 15px;
+    }
+    .order-table.payment-table tbody td.col-orderState div.reviewBtn {
+        text-align: right;
+        margin-top: 10px;
+    }
+    table.order-table.payment-table colgroup col {
+        width: 100%;
+    }
+    table.order-table.payment-table colgroup col[width="60%"] {
+        width: 100% !important;
+    }
+    table.order-table.payment-table colgroup col[width="20%"] {
+        width: 100%;
+    }
+    table.order-table.payment-table colgroup col {
+        width: 100%;
+    }
+    .order-table.payment-table .col-kinds {
+        width: 100%;
+        display: block;
+    }
+    .order-table.payment-table .col-kinds span,
+    .order-table.payment-table .col-price span {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+    }
+    .order-table.payment-table .col-kinds span.label,
+    .order-table.payment-table .col-price span.label {
+        width: 49%;
+        text-align: left;
+        font-size: 12px;
+    }
+    .order-table.payment-table .col-cancel {
+        width: 10%;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .order-table.payment-table .checkboxArea {
+        padding: 15px 10px 5px;
+    }
+    .order-table.payment-table .prd-info .imgArea {}
+    .order-table.payment-table .prd-info .buy-info {
+        padding-left: 20px;
+        width: 62%;
+    }
+    .order-table.payment-table .col-price {
+        padding: 5px 10px 5px;
+    }
+    .payment-table .prd-info .buy-info .orderNumber {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .order-table.payment-table .prd-info .buy-info a {
+        font-size: 15px;
+    }
+    .order-table.payment-table .prd-info .buy-info .option p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /*주문상세*/
+    .orderList-table {
+        width: 100%;
+        border-top: 1px solid #231815
+    }
+    .orderList-table th {
+        font-size: 12px;
+        line-height: 14px;
+        width: 30%;
+    }
+    .orderList-table td {
+        font-size: 12px;
+        line-height: 14px;
+        width: 70%;
+    }
+    .paylst-table {}
+    .paylst-table .orderList-table td {
+        border-right: 0;
+    }
+    .paylst-table .payLeft {
+        width: 100%;
+        float: left;
+    }
+    .paylst-table .total {
+        width: 100%;
+        background: #f7f7f7;
+        margin-top: 0px;
+        border-top: 0;
+        min-height: auto;
+    }
+    .paylst-table .total dl {}
+    .paylst-table .total dl dt {
+        width: 34%;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 38px;
+        text-align: left;
+    }
+    .paylst-table .total dl dd {
+        width: 66%;
+        float: right;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: right;
+        line-height: 38px;
+        letter-spacing: 0;
+    }
+    .paylst-table .total dl dd strong {
+        font-size: 19px;
+        color: #061f5c;
+        font-weight: 500;
+    }
+    /*리뷰작성*/
+    .containerWrap .editorArea iframe,
+    .rightBlock .reviewWrite .editorArea iframe {
+        display: none;
+    }
+    .rightBlock .reviewWrite .tablet {
+        display: block;
+    }
+    .reviewWrite tbody tr:last-child.tablet td {
+        width: 100%;
+        display: block;
+    }
+    .containerWrap .editorArea .pcVer {
+        display: none;
+    }
+    .containerWrap .editorArea .tablet {
+        display: block;
+    }
+    .containerWrap .fileAttach td {
+        width: 100%;
+        display: inline-block;
+    }
+    .communityWrite .writeBox.reviewWrite table {
+        border-top: 0
+    }
+    .communityWrite .writeBox.reviewWrite tbody td {
+        text-align: left;
+    }
+    .writeBox.reviewWrite .fullInput {
+        width: 100%;
+    }
+    .writeBox.reviewWrite .select-button {}
+    .writeBox.reviewWrite .btn a.roundBtn:nth-child(2) {
+        margin-left: 18px;
+    }
+    .rightBlock .reviewWrite .fileAttach {
+        display: block;
+    }
+    .fileAttach .attachList {}
+    .fileAttach .attachList div {
+        background: #f3f3f3;
+        border: 1px solid #d7d7d7;
+        font-size: 13px;
+        max-width: 380px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 37px;
+        line-height: 35px;
+        padding: 0 20px;
+        margin-right: 10px;
+    }
+    .fileAttach .attachList button {
+        width: 14px;
+        vertical-align: middle;
+    }
+    .fileAttach .attachList button img {
+        width: 14px;
+    }
+    .fileAttach .attachBtn {}
+    .fileAttach .attachBtn a {
+        display: inline-block;
+        border: 1px solid #231815;
+        color: #231815;
+        background: #fff;
+        font-size: 13px;
+        text-align: center;
+        width: 76px;
+        height: 37px;
+        line-height: 35px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:990px) {
+    .inner-contents .guestInq.mypage-section {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    .inner-contents .section {
+        padding: 40px 15px 70px !important;
+        min-height: 736px;
+    }
+    .minH-auto .inner-contents .section {
+        min-height: auto;
+    }
+    .inner-contents .section .srchFilter {
+        margin-bottom: 25px;
+    }
+    /*로그인*/
+    .subBox.whiteBox .loginArea {
+        padding-right: 40px;
+    }
+    .subBox.whiteBox .registerBox {
+        padding-left: 40px;
+    }
+    .subBox.whiteBox .registerBox .memberBox .forgot a {
+        width: 46%;
+    }
+    /*회원가입*/
+    .subBox.whiteBox.joinBox {
+        width: 60%;
+        padding: 60px 30px;
+    }
+    .subBox.whiteBox.joinBox.joinComplete {
+        width: 60%;
+        padding: 60px 30px;
+    }
+    .subBox.whiteBox.joinBox h4 {
+        font-size: 1.000em;
+    }
+    .subBox.whiteBox.joinBox.login-step2.findPwBox {
+        width: 60%;
+        padding: 50px 30px;
+    }
+    .subBox.whiteBox.joinBox .loginArea .userInfo input[type="text"] {
+        font-size: 12px;
+    }
+    .subBox.whiteBox.joinBox.login-step2.findPwBox p.txt {
+        font-size: 14px;
+        color: #777;
+        line-height: 20px;
+        white-space: pre-line;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .subBox.whiteBox.joinBox.login-step2.findPwBox .grayBox {
+        background: #f2f2f2;
+        width: 100%;
+        line-height: 22px;
+        font-size: 14px;
+        text-align: center;
+        white-space: pre-line;
+        padding: 25px 10px;
+        margin-top: 30px;
+    }
+    .subBox.whiteBox.joinBox.login-step2.findPwBox .grayBox a {
+        display: inline-block;
+        height: auto;
+        line-height: normal;
+        width: auto;
+        color: #269cd3;
+    }
+    /*비회원 로그인, 구매*/
+    .noMemberLoginBox {}
+    .noMemberBox .btnarea button {
+        background: #eee;
+        border-color: #eee;
+        color: #231815;
+    }
+    .subBox.whiteBox .registerBox .noMemberLoginBox .btnarea a {
+        background: #eee;
+        border-color: #eee;
+        color: #231815;
+        width: 46%;
+    }
+    .subBox.whiteBox .registerBox .noMemberLoginBox .btnarea a:hover {
+        background: #231815;
+    }
+    .subBox.whiteBox .registerBox .noMemberLoginBox h4 {
+        margin-bottom: 5px;
+    }
+    .subBox.whiteBox .registerBox .noMemberLoginBox p {
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+    .rightBlock.noMemeberOrder span.deliveryBtn {
+        padding-right: 0px;
+    }
+    .noMemeberOrder .order-table.payment-table tbody td>span {
+        width: 100%;
+        text-align: center;
+    }
+    .noMemb_inquiry h4 {
+        margin-bottom: 5px;
+    }
+    .noMemb_inquiry p {
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+    .wsmobileheader {
+        position: relative;
+        top: auto;
+        clear: both;
+    }
+    .animated-arrow {
+        position: absolute;
+        top: auto;
+    }
+    .wsmobileheader.top_bar_fix {
+        position: fixed;
+    }
+    #wrapper {
+        margin: 0 auto;
+    }
+    .inner-contents .section .srchFilter .w145 {
+        width: 118px;
+    }
+    .inner-contents .section {
+        padding: 35px 20px;
+    }
+    .inner-contents .section.prdDetail {
+        padding: 35px 20px;
+    }
+    /*교육신청*/
+    .request_list .whiteBox {
+        padding: 25px;
+    }
+    .request-page-title-wrap .page-title2 {
+        font-size: 20px;
+    }
+    .request-page-title-wrap .page-sub-txt2 {
+        font-size: 14px;
+    }
+    /*커뮤니티- 상세*/
+    .communityDetail .listDetail .comment .comment-write {
+        width: 100%;
+        display: inline-block;
+    }
+    .communityDetail .listDetail .comment .comment-write textarea {
+        width: 88%;
+    }
+    .communityDetail .listDetail .comment .comment-write a {
+        width: 11%;
+    }
+    /*커뮤니티- 작성*/
+    .communityWrite .writeBox {
+        padding: 30px 20px 50px;
+    }
+    .communityWrite table {
+        width: 100%;
+    }
+    .communityWrite tbody tr td {
+        padding: 0 10px 20px;
+    }
+    .communityWrite tbody tr:first-child td {
+        padding: 0 10px 20px;
+    }
+    .communityWrite tbody tr:last-child td {
+        padding: 0 10px 20px;
+    }
+    .communityWrite tbody td h4 {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .communityWrite tbody td input.w160 {
+        width: 50%;
+        margin-right: 8px;
+    }
+    .communityWrite tbody td input.fullInput {
+        width: 100%;
+    }
+    .communityWrite tbody td textarea {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+    .communityWrite .writeBox .btn {
+        margin-top: 10px;
+    }
+    .communityWrite .writeBox .btn a.roundBtn:nth-child(2) {
+        margin-left: 18px;
+    }
+    .pie,
+    .c100 .bar,
+    .c100.p75 .fill,
+    .c100.p100 .fill {
+        position: absolute;
+        border: 5px solid #269cd3;
+        width: 140px;
+        height: 140px;
+        clip: rect(0em, 75px, 150px, 0em);
+        border-radius: 50%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .c100 {
+        position: relative;
+        font-size: 12px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 10px 10px 10px;
+        ;
+        background-color: #d3d7e0;
+    }
+    .c100 *,
+    .c100 *:before,
+    .c100 *:after {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    .c100:after {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: block;
+        content: " ";
+        width: 140px;
+        height: 140px;
+    }
+    .c100 .slice {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        clip: rect(0em, 120px, 120px, 75px);
+    }
+    .c100 .txt {
+        padding: 18% 0;
+    }
+    .c100 .txt img {
+        width: 37px;
+    }
+    .c100 .txt .txt2 {
+        margin-bottom: 12px;
+    }
+    .tab_container .tab_content .only-benefit {
+        padding: 20px;
+    }
+    .tab_container .tab_content .only-benefit .benefit1,
+    .tab_container .tab_content .only-benefit .benefit2,
+    .tab_container .tab_content .only-benefit .benefit3 {
+        background-size: 69px;
+    }
+    /*마이페이지-리뷰*/
+    .payment-table.review-table tr {
+        position: relative;
+        border-bottom: 1px solid #eee;
+        display: inline-block;
+        width: 100%;
+    }
+    .review-table .prd-info .buy-info {
+        width: 620px;
+    }
+    .review-table .col-review .reviewTxt a {
+        font-size: 14px;
+    }
+    .review-table .col-date span {
+        font-size: 12px;
+    }
+    .payment-table.review-table tbody td {
+        width: 100%\9;
+        float: left\9;
+    }
+    .payment-table.review-table tbody td {
+        border-bottom: 0;
+    }
+    .payment-table.review-table tbody .prd-info {
+        width: 100%;
+        display: block;
+        padding: 10px 10px 10px;
+        border-bottom: 1px dashed #d8d8d8;
+    }
+    .payment-table.review-table tbody .col-review {
+        width: 100%;
+        display: block;
+        padding: 15px 10px 5px;
+    }
+    .review-table .col-date span {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        font-size: 12px;
+    }
+    .payment-table.review-table tbody td.col-date {
+        width: 100%;
+        display: block;
+        padding: 5px 10px 15px;
+    }
+    /*마이페이지-리뷰상세*/
+    .reviewDetail .listDetail-top .review-info p.title-txt {
+        font-size: 14px;
+    }
+    .reviewDetail .listDetail-top .review-info a {
+        font-size: 14px;
+    }
+    .reviewDetail .listDetail-top .review-info .option p {
+        font-size: 12px;
+    }
+    .reviewDetail .listDetail-top .title-wrap .title {
+        font-size: 17px;
+    }
+    .reviewDetail .listDetail-top .title-wrap .date {
+        margin-top: -11px;
+    }
+    /*마이페이지-리뷰작성*/
+    .reviewWrite .prd-info .buy-info a {
+        font-size: 15px;
+        color: #555;
+    }
+    .reviewWrite .prd-info .buy-info .option p {
+        font-size: 12px;
+    }
+    .reviewWrite .prd-info .buy-info .quantity {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+}
+
+/**__________________________________보듬숍__________________________________**/
+
+@media screen and (min-width: 768px) {
+    .cate-mobile-2depth.on {
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #mini_menu {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width:1800px) {
+    #quickMenu {
+        display: none;
+    }
+}
+
+@media all and (max-width:1240px) {
+    /*상품상세*/
+    .bodeum-shop #prdInfoWrap {
+        width: 35%;
+    }
+    .bodeum-shop .prdInfoWrap {
+        width: 38%;
+        position: fixed;
+        left: auto;
+        max-width: 400px;
+        margin-right: 20px;
+        right: 0;
+    }
+    .bodeum-shop .prdInfoWrap.sticky-start {
+        position: absolute;
+        right: 0px;
+        margin-right: 0;
+        max-width: 400px;
+        width: 36.5%;
+        top: 0px
+    }
+    .bodeum-shop .prdInfoWrap.sticky {
+        margin-top: 0px;
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: 20px;
+        width: 35%;
+        margin-left: 0px;
+    }
+    .bodeum-shop .prdInfoWrap .btn {
+        margin-top: 30px;
+        text-align: right;
+    }
+    .bodeum-shop .prdInfoWrap .btn a {
+        width: 49%;
+        height: 42px;
+        line-height: 40px;
+    }
+    .bodeum-shop .prdInfoWrap .btn a:nth-child(1) {}
+    .bodeum-shop .prdInfoWrap .btn a:nth-child(2) {
+        margin-left: 2%;
+        float: right;
+    }
+    .bodeum-shop #prdDetail2 {
+        width: 63%;
+        max-width: 100%;
+        padding-right: 5%;
+    }
+}
+
+@media all and (max-width:1099px) {
+    .bodeum-shop .prd-wrap .img .soldOut {
+        background: url('../img/icon_soldout.png')no-repeat;
+        width: 180px;
+        height: 180px;
+        background-size: 180px;
+        position: absolute;
+        top: 0;
+        margin-top: -90px;
+        left: 0;
+        margin-left: -90px;
+        z-index: 9;
+    }
+}
+
+@media all and (max-width:990px) {
+    /*메인*/
+    /*상품 리스트 정보부분*/
+    .bodeum-shop .prd-wrap {}
+    .bodeum-shop .prd-wrap .img {
+        margin-bottom: 11px;
+    }
+    .bodeum-shop .prd-wrap .img .soldOut {
+        background: url('../img/icon_soldout.png')no-repeat;
+        width: 140px;
+        height: 140px;
+        background-size: 140px;
+        position: absolute;
+        top: 0;
+        margin-top: -70px;
+        left: 0;
+        margin-left: -70px;
+        z-index: 9;
+    }
+    .bodeum-shop .prd-wrap .img img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .bodeum-shop .prd-wrap .title {
+        margin-bottom: 20px;
+    }
+    .bodeum-shop .prd-wrap .title a {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .bodeum-shop .prd-wrap .price {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .bodeum-shop .prd-wrap .price strong {
+        font-size: 16px;
+        color: #061f5c;
+    }
+    .bodeum-shop .prd-wrap .saleprice {
+        font-size: 14px;
+    }
+    .bodeum-shop .prd-wrap .saleprice span {
+        font-size: 16px;
+    }
+    /*상품 리스트 정보부분*/
+    .bodeum-shop .inner-contents .list-section {
+        padding: 40px 15px 70px;
+    }
+    .bodeum-shop .inner-contents .list-section .prd-wrap {
+        margin-bottom: 35px;
+    }
+    .bodeum-shop .inner-contents .list-section .prd-wrap .img {
+        margin-bottom: 10px;
+    }
+    .bodeum-shop .inner-contents .list-section .prd-wrap .title a {
+        line-height: 19px;
+    }
+    .bodeum-shop .inner-contents .list-section {
+        text-align: left;
+    }
+    .bodeum-shop .inner-contents .list-section .cate-title {
+        font-size: 22px;
+        padding-bottom: 13px;
+    }
+    .bodeum-shop .inner-contents .list-section .cate-title+.cate-3depth {
+        margin-top: 8px;
+    }
+    .bodeum-shop .inner-contents .list-section .sort li a {
+        font-size: 12px;
+    }
+    /*상품상세*/
+    /*오른쪽 상품정보 영역*/
+    .bodeum-shop .prdInfoWrap {
+        padding-left: 0px;
+        top: 140px !important;
+    }
+    .bodeum-shop .prdInfoWrap.sticky-fixed {
+        top: 68px !important;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl dt {
+        width: 40%;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl dd {
+        width: 60%;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl dd.price strong {
+        font-size: 16px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl dd.price span {
+        font-size: 16px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl dd.point strong {
+        font-size: 16px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl dd.point span {
+        font-size: 16px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl.delivery dd {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        height: auto;
+        line-height: 26px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo dl.delivery dd p.txt {
+        font-size: 12px;
+        color: #777;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option {
+        padding-top: 30px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .option-total .op-title {
+        font-size: 13px;
+        color: #555;
+        margin-top: 2px;
+        margin-bottom: 12px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .option-total .op-amount {
+        width: 100%;
+        display: inline-block;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .option-total .op-delete {
+        position: absolute;
+        right: 15px;
+        margin-top: -33px;
+        line-height: 0;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .option-total select#select {
+        width: 88px;
+        height: 25px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .price {
+        font-size: 12px;
+        color: #555;
+        width: 50%;
+        float: right;
+        text-align: right;
+        height: 20px;
+        line-height: 20px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .price strong {
+        color: #061f5c;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .prd-total {
+        margin-top: 19px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dt {
+        font-size: 14px;
+        color: #555;
+        width: 50%;
+        float: left;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dd {
+        width: 50%;
+        float: left;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dd strong.sale_price {
+        font-size: 22px;
+    }
+    .bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dd span {
+        font-size: 18px;
+    }
+    /*왼쪽 상품정보 영역*/
+    .bodeum-shop #prdDetail2 {
+        width: 60%;
+        max-width: 750px;
+    }
+    .bodeum-shop .prdInfoWrap.sticky-start {
+        position: absolute;
+        right: 0px;
+        width: 40%;
+    }
+    .bodeum-shop .prdInfoWrap.sticky {
+        position: fixed;
+        right: 15px;
+        width: 38%;
+    }
+    .bodeum-shop #prdDetail2 .soldOut {
+        background: url('../img/icon_soldout.png')no-repeat;
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+        position: absolute;
+        top: 0;
+        margin-top: -125px;
+        left: 0;
+        margin-left: -125px;
+        z-index: 9;
+    }
+    /*관련상품*/
+    /*관련영상*/
+    .bodeum-shop .relation .relationWrap {
+        width: 100%;
+    }
+    .bodeum-shop .relation .relationWrap .relation-pannel .rel-video-wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .bodeum-shop .relation .relationWrap .relation-pannel .rel-video-wrap:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+    .bodeum-shop .relation .relationWrap .relation-pannel .rel-video-wrap .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 1px solid #eee;
+    }
+    .bodeum-shop .relation .relationWrap .relation-pannel .rel-video-wrap .img img {
+        border-bottom: 0;
+    }
+    /*상품상세설명 이미지*/
+    .bodeum-shop #prdDetail2 .prdDetailExp-1>.detail-content {
+        border-bottom: 1px solid #dfdfdf;
+        border-top: 0;
+        v
+    }
+    .bodeum-shop #prdDetail2 .prdDetailExp-1>.detail-content img {
+        max-width: 100%;
+    }
+    /*상품상세설명 이미지, 상품정보고시, 상품후기, 상품문의, 배송/반품/교환 안내 공통*/
+    .bodeum-shop .detail-prd-content h4 {
+        font-size: 20px;
+        border-bottom: 1px solid #231815;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    .bodeum-shop .detail-prd-content h4 .count {
+        font-size: 16px;
+        color: #269cd3;
+        font-weight: 500;
+    }
+    .bodeum-shop .detail-prd-content h4 a {
+        font-size: 11px;
+        width: 67px;
+        height: 25px;
+        line-height: 23px;
+        border: 1px solid #231815;
+        text-align: center;
+        float: right;
+    }
+    .bodeum-shop #prdDetail2 .prdDetailExp-1>div.detail-prd-content {
+        border-bottom: 1px solid #dfdfdf;
+        border-top: 0;
+    }
+    /*상품정보고시*/
+    .bodeum-shop .product-info {}
+    .bodeum-shop .product-info .point-table tbody th,
+    .bodeum-shop .product-info .point-table tbody td {
+        font-size: 12px;
+        padding: 9px 20px 10px;
+    }
+    .bodeum-shop .product-info .point-table tbody th {
+        width: 200px;
+    }
+    .bodeum-shop .product-info .point-table tbody td {}
+    /*상품후기*/
+    .bodeum-shop .product-review {}
+    .bodeum-shop .product-review .reviewList {}
+    .bodeum-shop .product-review .reviewAccodion {}
+    .bodeum-shop .product-review li {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .bodeum-shop .product-review li.review-title h5 {
+        font-size: 15px;
+        color: #555
+    }
+    .bodeum-shop .product-review li.review-title .option {
+        font-size: 12px;
+    }
+    .bodeum-shop .product-review li.review-title p span {
+        font-size: 12px;
+    }
+    /*상품문의*/
+    .bodeum-shop .product-qa .qa-title p span {
+        font-size: 12px;
+    }
+    .bodeum-shop .product-qa .qa-title .state span {
+        font-size: 12px;
+    }
+    .bodeum-shop .product-qa .qa-content .qa-q .qa-icon {
+        display: inline-block;
+        background: #f3f3f3;
+        color: #333;
+        width: 45px;
+        height: 24px;
+        line-height: 22px;
+        vertical-align: top;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 50px;
+        font-weight: 300;
+        margin-right: 25px;
+    }
+    /*배송,반품,교환 안내*/
+    .bodeum-shop .product-service h4 {
+        border-bottom: 0;
+    }
+    .bodeum-shop .product-service .serviceBox {
+        width: 100%;
+        padding: 50px 40px;
+        border: 10px solid #f3f3f3;
+        display: inline-block;
+    }
+    .bodeum-shop .product-service h5 {
+        font-size: 15px;
+    }
+    .bodeum-shop .product-service div {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /*상품후기 리스트*/
+    #reviewList .title-wrap .imgArea {
+        width: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+    #reviewList .title-wrap .title-txt {
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #reviewList h4 {
+        font-size: 20px;
+        border-bottom: 1px solid #231815;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    #reviewList h4 .count {
+        font-size: 16px;
+        color: #269cd3;
+        font-weight: 500;
+    }
+    #reviewList h4 a {
+        font-size: 11px;
+        width: 67px;
+        height: 25px;
+        line-height: 23px;
+        border: 1px solid #231815;
+        text-align: center;
+        float: right;
+    }
+    #reviewList .reviewAccodion2 li {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    #reviewList .reviewAccodion2 li.review-title h5 {
+        font-size: 15px;
+        color: #555;
+        line-height: 22px;
+    }
+    #reviewList .reviewAccodion2 li.review-title .option {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    #reviewList .reviewAccodion2 li.review-title p span {
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width:767px) and (max-width:813px) {
+    .rightBlock .lessonthumList .title .titleArea {
+        padding-top: 0;
+    }
+    .rightBlock .lessonthumList .title .titleArea div.date span.period:after {
+        display: none;
+    }
+}

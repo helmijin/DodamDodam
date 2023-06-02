@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bodeum.mapper.ShopMapper">
+	
+	<select id="getSpecificList" resultType="com.bodeum.domain.ProductVO" parameterType="int">
+    <![CDATA[ 
+      select * from product where itemnum =#{itemnum}
+      ]]>
+  </select>
+  
+  <select id="getSpecBoard" resultType="com.bodeum.domain.BoardVO" parameterType="int">
+  	select * from board where boardnum =#{boardnum}
+  </select> 
+  
+   <select id="getReviewBoard" resultType="com.bodeum.domain.ReviewVO" parameterType="int">
+  	select * from review where rboardnum =#{rboardnum}
+  </select>
+  
+  <sql id="criterial">
+  	<trim prefix="(" suffix=" ) and">
+		 <foreach collection="typeArr" item="type" separator="or">
+		 	<if test="type=='T'.toString()">
+						title like '%' || #{keyword} || '%'
+		 	</if>
+		 	<if test="type=='C'.toString()">
+						content like '%' || #{keyword} || '%'
+		 	</if>
+		 	<if test="type=='W'.toString()">
+						writer like '%' || #{keyword} || '%'
+		 	</if>
+		 </foreach>
+	 </trim>
+  </sql>
+
+  <select id="getTotalCount" resultType="int">
+  	select count(*) from review where 
+  	
+  	 <include refid="criterial"></include>
+  	rboardnum >0
+  </select>
+  
+  <select id="getList" resultType="com.bodeum.domain.ReviewVO">
+    select * from review where rboardnum > 0 order by rboardnum desc
+  </select>
+  
+<!--    <select id="get" resultType="com.bodeum.domain.ReviewVO">
+  select rboardnum, itemnum, rtitle, rcontent, userid, rdates
+  from review
+  where 
+  rboardnum = #{rboardnum}
+  </select>  -->
+  
+  <insert id="insert">
+  	insert into review(rboardnum, rtitle, rcontent, userid)
+  	values (seq_review.nextval, #{rtitle}, #{rcontent}, #{userid})
+  </insert>
+  
+  <insert id="insertSelectKey">
+  	<selectKey keyProperty="rboardnum" order="BEFORE" resultType="int">
+  		select seq_review.nextval from dual
+  	</selectKey>
+  	insert into review(rboardnum, rtitle, rcontent, userid)
+  	values (#{rboardnum}, #{rtitle}, #{rcontent}, #{userid})
+  </insert>
+  
+  <select id="read" resultType="com.bodeum.domain.ReviewVO">
+  	select * from review where rboardnum = #{rboardnum}
+  </select>
+  
+  <delete id="delete">
+  	delete from review where rboardnum = #{rboardnum}
+  </delete>
+  
+  <update id="update">
+  	update review
+  	set  
+  	rtitle=#{rtitle},
+  	rcontent=#{rcontent},
+  	userid = #{userid},
+  	rdates = sysdate
+  	where rboardnum = #{rboardnum}
+  </update>
+  
+  <select id="getListWithPaging" resultType="com.bodeum.domain.ReviewVO">
+  <![CDATA[
+  	select rboardnum, rtitle, rcontent, userid, rdates from 
+		(select /*+ INDEX_DESC(review pk_rboard) */ rownum rn, rboardnum, rtitle, rcontent, userid, rdates
+		from review where
+	]]>
+	 
+	 <include refid="criterial"></include>
+	 
+	<![CDATA[
+	     rownum <= #{pageNum} * #{amount}
+	)
+	where rn > (#{pageNum}-1)*#{amount}
+	]]>
+	
+  </select>
+  
+<!--   <update id ="updateReplyCnt">
+  	update board set replycnt = replycnt + #{amount} where boardnum = #{boardnum}
+  </update> -->
+  
+</mapper>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bodeum.mapper.ManagerMapper">
+
+  <select id="getList" resultType="com.bodeum.domain.ManagerVO">
+    select * from product order by itemnum desc
+  </select>
+
+  <insert id="insert">
+  	insert into product
+  	values (#{itemnum}, #{itemcat}, #{itempic}, #{item}, #{opt1}, #{opt2}, #{opt3}, #{opt4}, #{opt5}, #{opt6}, #{opt7}, #{itemdisco}, #{displaystatus}, #{salesstatus}, #{itemcnt})
+  </insert>
+  
+  <insert id="insertSelectKey">
+  	insert into product
+  	values (#{itemnum}, #{itemcat}, #{itempic}, #{item},#{opt1}, #{opt2}, #{opt3}, #{opt4}, #{opt5}, #{opt6}, #{opt7}, #{itemdisco}, #{displaystatus}, #{salesstatus}, #{itemcnt})
+  </insert>
+  
+  <select id="read" resultType="com.bodeum.domain.ManagerVO">
+  	select * from product where bno = #{bno}
+  </select>
+  
+  <delete id="delete">
+  	delete from product where bno = #{bno}
+  </delete>
+  
+  <update id="update">
+  	update tbl_board
+  	set  
+  	title=#{title},
+  	content=#{content},
+  	writer = #{writer},
+  	updateDate = sysdate
+  	where bno = #{bno}
+  </update>
+  
+  
+		<!-- 검색기능 -->
+	<sql id="criterial">
+		<trim prefix="(" suffix=") AND " prefixOverrides="OR">
+			<foreach item="type" collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type=='T'.toString()">
+							title like '%'||#{keyword}||'%'
+						</when>
+						<when test="type=='C'.toString()">
+							content like '%'||#{keyword}||'%'
+						</when>
+						<when test="type=='W'.toString()">
+							writer like '%'||#{keyword}||'%'
+						</when>
+					</choose>
+				</trim>			
+			</foreach>
+		</trim>
+	</sql>	 
+  
+  
+  <select id="getListWithPaging" resultType="com.bodeum.domain.ProductVO">
+  
+  
+  <!-- <![CDATA[ ]]> xml 형식이 아니라 작성한 그대로 읽어오라는 것 -->
+  <![CDATA[
+  select 
+	 *
+	from (
+	    rownum rn, itemnum, itemcat, itempic, item, op1, op2, op3, op4, op5, op6, op7, itemdisco, displaystatus, salesstatus, itemcnt
+		from product
+		where
+	]]>
+	
+	<include refid="criterial"></include>
+		
+
+  <![CDATA[
+		
+		rownum <= #{pageNum} * #{amount}
+	)
+  where rn > (#{pageNum}-1)*#{amount}
+  ]]>
+
+  </select>
+  
+  
+  <select id="getTotalCount" resultType="int">
+	select count(*) from product 
+	where 
+	
+	<include refid="criterial"></include>
+	
+	itemnum>0
+	
+	</select>
+  
+  
+  
+</mapper>

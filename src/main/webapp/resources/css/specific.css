@@ -1,0 +1,1331 @@
+script {
+    display: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+textarea,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    font: inherit;
+    vertical-align: baseline;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #231815;
+    max-width: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    line-height: 1;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+style {
+    display: none;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#wrapper .containerWrap {
+    padding-top: 157px;
+}
+
+.home_menu {
+    display: block;
+    background-color: #f9f9f9;
+}
+
+#menu_inner {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+
+}
+
+#menu_inner li {
+    display: inline-block;
+    font-size: 12px;
+    color: #555;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+#menu_inner li a {
+    font-size: 12px;
+    color: #555;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    /*    color: -webkit-link;
+    text-decoration: underline;*/
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.prev_btn {
+    display: none;
+}
+
+.prev_btn a img {
+    vertical-align: middle;
+}
+#reviewList .btn a {
+    width: 172px;
+}
+.inner-contents .section.prdDetail {
+    padding: 60px 20px;
+    min-height: auto;
+}
+
+.inner-contents .section {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 20px 70px;
+    box-sizing: border-box;
+    min-height: 723px;
+}
+
+.prdDetail .contents {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+
+.ratio2 .thumbnail {
+    position: relative;
+    overflow: hidden;
+    padding-top: 98%;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.ratio2 .thumbnail .centered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%); */
+    transform: translate(50%, 50%);
+}
+
+
+
+.ratio2 .thumbnail .centered img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    max-width: 100%;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
+
+#prdInfoWrap {
+    width: 45%;
+    margin-left: 5%;
+    float: left;
+    right: 0;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+textarea, input {
+    box-sizing: border-box;
+}
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.bodeum-shop .prdInfoWrap {
+    width: 35%;
+    left: auto;
+    max-width: 400px;
+    right: 50%;
+    margin-right: -600px;
+    margin-left: 0px;
+    position: relative;
+}
+#prdInfoWrap .prdInfo .icon {
+    text-align: left;
+    height: 18px;
+}
+.icon .bestItem {
+    display: inline-block;
+    height: 18px;
+    line-height: 17px;
+    font-size: 0.750em;
+    color: #155183;
+    background: #76d0f2;
+    text-align: center;
+    padding: 0 6px;
+    box-sizing: border-box;
+    margin-right: 4px;
+}
+.icon span {
+    vertical-align: top;
+}
+.icon .saleItem {
+    display: inline-block;
+    height: 18px;
+    line-height: 17px;
+    font-size: 0.750em;
+    color: #480000;
+    background: #ff6a6a;
+    text-align: center;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+#prdInfoWrap .prdInfo .icon + .prd-title {
+    margin-top: 12px;
+}
+#prdInfoWrap .prdInfo .prd-title {
+    font-size: 28px;
+    text-align: left;
+    font-weight: 500;
+    margin: 0px 0 15px;
+    line-height: 38px;
+}
+.bodeum-shop #prdInfoWrap .prdInfo dl.delivery dd {
+    padding-top: 0px;
+    padding-bottom: 9px;
+    height: auto;
+    line-height: 26px;
+}
+.bodeum-shop #prdInfoWrap .prdInfo dl.delivery dd p.txt {
+    line-height: 30px;
+    font-size: 12px;
+    color: #777;
+}
+#prdInfoWrap .prdInfo dl dd {
+    /*width: 55%;
+    float: left;*/
+    text-align: right;
+    padding: 0px 0 0 30px;
+    color: #777;
+    box-sizing: border-box;
+    height: 35px;
+    line-height: 34px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#prdInfoWrap .prdInfo dl {
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+}
+#prdInfoWrap .prdInfo dl dt {
+    width: 45%;
+    float: left;
+    padding: 0 30px 0 0;
+    text-align: left;
+    box-sizing: border-box;
+    height: 35px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #777;
+    font-size: 15px;
+}
+dt {
+    display: block;
+}
+dl {
+    display: block; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+.bodeum-shop #prdInfoWrap .prdInfo dl dd .price {
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    color: #777;
+    text-decoration: line-through; 
+}
+b, strong {
+    font-weight: bold;
+}
+strong {
+    font-weight: bold;
+}
+.bodeum-shop #prdInfoWrap .prdInfo dl dd strong.price:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #777;
+    position: absolute;
+    top: 50%;
+}
+.bodeum-shop #prdInfoWrap .prdInfo dl dd.price span {
+    font-size: 14px;
+    color: #777;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option {
+    border-top: 1px solid #d7d7d7;
+    padding-top: 20px;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option h4 {
+    font-size: 15px;
+    color: #777;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.inner-contents .section .srchFilter {
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.inner-contents .section .srchFilter input {
+    margin-right: 8px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option select {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 32px;
+}
+select {
+    padding: 0 22px 0 10px;
+    overflow: hidden !important;
+    -webkit-border-radius: 0;
+    /*-webkit-appearance: none;
+    -moz-appearance: none;*/
+    appearance: none;
+    background: #fff url(../Bodeum/Bodeum_files/select_arrow.png) no-repeat 100% 50%;
+    background-size: 19px;
+    background-color: field;
+    border: 1px solid #d7d7d7;
+    color: #777;
+    /*color: fieldtext;*/
+    display: inline-block;
+    height: 37px;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 13px;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+   /* white-space: pre;*/
+    -webkit-rtl-ordering: logical;
+    cursor: default;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+option.disabled {
+    color: lightgrey;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option select:last-child {
+    margin-bottom: 5px;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option .prd-total {
+    margin-top: 9px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dt {
+    font-size: 15px;
+    color: #555;
+    width: 50%;
+    float: left;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dd strong.sale_price {
+    color: #061f5c;
+    font-size: 25px;
+    font-weight: bold;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dd {
+    width: 50%;
+    float: left;
+}
+.bodeum-shop #prdInfoWrap .prdInfo .option .prd-total dd span {
+    color: #555;
+    font-size: 19px;
+    font-weight: bold;
+}
+.bodeum-shop .prdInfoWrap .btn {
+    position: relative;
+}
+.bodeum-shop #prdInfoWrap .cartPopover {
+    position: absolute;
+    z-index: 9;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -130px;
+}
+.blind {
+    display: none !important;
+}
+.grayBtn {
+    background: #f3f3f3;
+    box-sizing: border-box;
+}
+.bodeum-shop #prdInfoWrap .cartPopover .cartPopoverWrap {
+    position: relative;
+    border: 1px solid #0d205e;
+    background: #fff;
+    padding: 25px;
+    width: 260px;
+}
+.bodeum-shop #prdInfoWrap .cartPopover .cartPopoverWrap .txt {
+    font-size: 13px;
+    color: #0d205e;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.bodeum-shop #prdInfoWrap .cartPopover .cartPopoverWrap .button {
+    width: 100%;
+    display: inline-block;
+}
+.bodeum-shop #prdInfoWrap .cartPopover .cartPopoverWrap .button a.lineBtn {
+    float: left;
+    border: 1px solid #555;
+    color: #555;
+}
+.bodeum-shop #prdInfoWrap .cartPopover .cartPopoverWrap .button a {
+    width: 101px;
+    height: 32px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 32px;
+}
+.bodeum-shop #prdInfoWrap .cartPopover .cartPopoverWrap .button a.blueBtn {
+    float: right;
+}
+.bodeum-shop .prdInfoWrap .btn a:nth-child(2) {
+    margin-left: 2%;
+    float: right;
+}
+/*.bodeum-shop .prdInfoWrap .btn a {
+    width: 49%;
+    height: 42px;
+    line-height: 40px;
+}*/
+.bodeum-shop #prdDetail2 {
+    width: 65%;
+    max-width: 750px;
+    color: #333;
+}
+
+#prdDetail2 .prdDetailExp-1 {
+    text-align: left;
+}
+
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg {
+    text-align: center;
+    padding: 0 0 40px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#prdDetail2 .prdDetailExp-1>div:last-child {
+    border: 0;
+    /* padding: 0;*/
+}
+
+#prdDetail2 .prdDetailExp-1>div {
+    font-size: 15px;
+    /*padding: 40px 0;
+    border-top: 1px solid #dfdfdf;*/
+    line-height: 26px;
+    color: #555;
+}
+
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .big-thum {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.ratio2.thumbnail-wrapper {
+    width: 100%;
+}
+
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .big-thum .ratio2 .thumbnail {
+    border: none;
+    padding-top: 100%;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 > div.detail-prd-content.product-review {
+    border-top: 1px solid #dfdfdf;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 > div.detail-prd-content {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 0;
+}
+#prdDetail2 {
+    width: 50%;
+    float: left;
+    color: #333;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 > .detail-content {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 0;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 > .detail-content img {
+    max-width: 100%;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 > div.detail-prd-content.product-info {
+    border-bottom: 0;
+    border-top: 0;
+}
+.bodeum-shop .detail-prd-content h4 {
+    font-size: 22px;
+    border-bottom: 1px solid #231815;
+    font-weight: 500;
+    padding-bottom: 11px;
+    padding-top: 30px;
+}
+.bodeum-shop .detail-prd-content h4 a {
+    font-size: 12px;
+    width: 67px;
+    height: 25px;
+    line-height: 23px;
+    border: 1px solid #231815;
+    text-align: center;
+    float: right;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .big-thum img {
+    width: 550px;
+    max-width: 100%;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list {
+    text-align: center;
+    max-width: 550px;
+    margin: 10px auto 0;
+}
+
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list ul {
+    display: inline-block;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list li {
+    width: 9.1%;
+    float: left;
+    margin: 0 1% 1% 0;
+}
+
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list li .ratio2 .thumbnail {
+    border: none;
+    padding-top: 100%;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list li.active a:before {
+    content: '';
+  /*  border: 2px solid #061f5c;*/
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    box-sizing: border-box;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list li a:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    box-sizing: border-box;
+}
+.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg .sm-thum-list li.active img {
+    border: none;
+}
+.bodeum-shop #prdInfoWrap {
+    width: 30%;
+    margin-left: 5%;
+}
+.point-table {
+    width: 100%;
+}
+.bodeum-shop #prdInfoWrap .prdInfo dl dd.point strong {
+    font-size: 16px;
+    /* color: #061f5c; */
+}
+#prdInfoWrap .prdInfo dl dd.point strong {
+    font-size: 18px;
+    color: #777;
+}
+#prdInfoWrap .prdInfo dl:last-child {
+    border-bottom: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 100%;
+    max-width: none;
+    width: auto;
+    empty-cells: show;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.bodeum-shop .product-info .point-table tbody th {
+    width: 200px;
+}
+.bodeum-shop .product-info .point-table tbody th, .bodeum-shop .product-info .point-table tbody td {
+    font-size: 13px;
+    padding: 9px 20px 10px;
+    text-align: left;
+    border-bottom: 1px solid #d7d7d7;
+    vertical-align: middle;
+}
+.point-table tbody td {
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 18px 0;
+}
+.bodeum-shop .product-service .serviceBox {
+    width: 100%;
+    padding: 40px 40px;
+    border: 10px solid #f3f3f3;
+    display: inline-block;
+}
+
+.bodeum-shop .detail-prd-content h4 .count {
+    font-size: 18px;
+    color: #269cd3;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+.bodeum-shop .product-review li.review-title {
+    cursor: pointer;
+}
+.bodeum-shop .product-review li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.bodeum-shop .product-review li.review-title h5 {
+    font-size: 17px;
+    color: #555;
+}
+.bodeum-shop .product-review li.review-title .option {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 9px;
+}
+.bodeum-shop .product-review li.review-title p span {
+    font-size: 13px;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.bodeum-shop .product-qa .qa-title p span {
+    font-size: 13px;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.bodeum-shop .product-qa .qa-title p span:after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #555;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+.bodeum-shop .product-review .review-content {
+    display: none;
+}
+.bodeum-shop .product-review li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.bodeum-shop .product-review .review-content img {
+    max-width: 80%;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.bodeum-shop .product-review li.review-title p span:after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #555;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+#reviewList .btn {
+    text-align: center;
+    margin-top: 40px;
+}.whiteBtn {
+    background: transparent;
+    border: 1px solid #231815;
+    box-sizing: border-box;
+}
+.blueBtn {
+    background: #061f5c;
+    box-sizing: border-box;
+    color: #fff;
+}
+.roundBtn {
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+   height: 43px;
+    line-height: 41px; 
+    cursor: pointer;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.bodeum-shop .product-qa .qa-title {
+    cursor: pointer;
+}
+.bodeum-shop .product-qa li {
+    border-bottom: 1px solid #eee;
+}
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.bodeum-shop .product-qa .qa-title .state {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.bodeum-shop .product-qa .qa-title .state span.complete {
+    color: #269cd3;
+}
+.bodeum-shop .product-qa .qa-title .state span {
+    font-size: 13px;
+}
+.bodeum-shop .product-qa .qa-content {
+    display: none;
+}
+.bodeum-shop .product-qa li {
+    border-bottom: 1px solid #eee;
+}
+.bodeum-shop .product-qa .qa-content .qa-q {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+.bodeum-shop .product-qa .qa-content .qa-q .qa-icon {
+    display: inline-block;
+    background: #f3f3f3;
+    color: #333;
+    width: 45px;
+    height: 24px;
+    line-height: 22px;
+    vertical-align: top;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 300;
+    margin-right: 25px;
+}
+.bodeum-shop .product-qa .qa-content .txt {
+    width: 80%;
+    display: inline-block;
+}
+.bodeum-shop .product-qa .qa-content .qa-a {
+    padding: 15px 20px;
+}
+.bodeum-shop .product-qa .qa-content .txt {
+    width: 80%;
+    display: inline-block;
+}
+.bodeum-shop .product-qa li.qa-title2 {
+    padding: 15px 20px;
+    position: relative;
+}
+.bodeum-shop .product-qa .txt.secret {
+    background: url(../Bodeum_files/lock_icon.png)no-repeat left 4px;
+    padding-left: 20px;
+}
+.bodeum-shop .product-qa .qa-title2 p span {
+    font-size: 13px;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.bodeum-shop .product-qa .qa-title2 p span:after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #555;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+.paging {
+    padding: 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.paging ol {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+    display: inline;
+    zoom: 1;
+    margin: 0;
+}
+.paging li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0px;
+    font-size: 13px;
+    color: #777;
+    padding: 0 !important;
+    border-bottom: 0 !important;
+    vertical-align: top;
+    zoom: 1;
+}
+.bodeum-shop .product-qa li {
+    border-bottom: 1px solid #eee;
+}
+.paging li.active a {
+    color: #269cd3;
+    position: relative;
+}
+.paging li a {
+    display: block;
+    font-size: 14px;
+    width: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+    color: #777;
+    line-height: 15px;
+    box-sizing: border-box;
+    height: 30px;
+    text-align: center;
+}
+.paging li.etc {
+    display: inline-block;
+    font-size: 14px;
+    width: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+    color: #777;
+    line-height: 22px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 1px 0 !important;
+}
+.paging p a {
+    font-size: 14px;
+    color: #777;
+    position: relative;
+    vertical-align: middle;
+   padding-right: 16px;
+    margin-right: 12px;
+}
+.paging p a:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 1px;
+    height: 12px;
+    background: #777;
+}
+.paging p.last {
+    margin: 0 0 0 0px;
+}
+.paging p.last a {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+option.disabled {
+	color: lightgrey;
+}
+
+
+
+
+
+
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 2rem;
+    z-index: 999;
+}
+.modal--is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+.modal__dialog {
+    background: white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border: 1px solid #999;
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 10%);
+    position: relative;
+}
+.modal__header {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.modal__close {
+    float: right;
+    cursor: pointer;
+    margin-left: auto;
+    width: 22px;
+    height: 22px;
+    background-image: url(../../../resources/Bodeum_files/popup_cancel.gif);
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    appearance: none;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.modal__body {
+    padding: 50px 30px 30px;
+    text-align: center;
+}
+
+.myQaWritePopup table {
+    width: 100%;
+}
+colgroup {
+    display: table-column-group;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.myQaWritePopup tbody tr:first-child td {
+    padding: 0px 0 7px;
+}
+.myQaWritePopup tbody tr td {
+    padding: 7px 0 7px;
+    text-align: left;
+}
+.myQaWritePopup tbody td h4 {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.myQaWritePopup tbody td .srchFilter {
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.myQaWritePopup tbody td select {
+    width: 50%;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+.myQaWritePopup tbody td input {
+    width: 50%;
+    margin-right: 8px;
+}
+input[type="text"], input[type="password"], textarea {
+    font-size: 13px;
+}
+.myQaWritePopup tbody td .checkArea {
+    display: inline-block;
+    font-size: 12px;
+}
+label.check {
+    cursor: pointer;
+    text-indent: 25px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    color: #777;
+    font-size: 13px;
+    height: 17px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+label.check:before {
+    background: #f7f7f7;
+    border: 1px solid #d7d7d7;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+label.check:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 0.5em;
+    height: 0.25em;
+    background: transparent;
+    top: 4.5px;
+    left: 4.5px;
+    border: 3px solid #54c0e1;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.myQaWritePopup tbody td.phoneNumber .srchFilter select {
+    float: left;
+    width: 30%;
+}
+select {
+    padding: 0 22px 0 10px;
+    overflow: hidden !important;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url(../img/select_arrow.png) no-repeat 100% 50%;
+    background-size: 19px;
+    border: 1px solid #d7d7d7;
+    height: 37px;
+    padding-left: 10px;
+    color: #777;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.myQaWritePopup tbody td.phoneNumber .srchFilter span {
+    float: left;
+    width: 5%;
+    text-align: center;
+    height: 31px;
+    line-height: 31px;
+}
+.myQaWritePopup tbody td.phoneNumber .srchFilter input {
+    float: left;
+    width: 30%;
+    margin-right: 0;
+}
+.myQaWritePopup tbody td textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+.left {
+    text-align: left;
+}
+input[type="radio"], input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+.modal__body .btn {
+    margin-top: 20px;
+}
+.modal__body .btn a {
+    width: 157px;
+    height: 37px;
+    line-height: 35px;
+}
+.myQaWritePopup .btn a.roundBtn:nth-child(2) {
+    margin-left: 18px;
+}
+table.popupTable {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: #fff;
+}
+
+.closeForm {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 26px;
+	background: #ddd;
+}
+
+.popMsg {
+	position: absolute;
+	right: 50px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+div.check {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.popClose {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: 12px;
+	color: #fff;
+	background: #666;
+	width: 40px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+} 
+h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+/*     font-size: 1.17em;
+    font-weight: bold; */
+}

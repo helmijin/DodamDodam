@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bodeum.mapper.PetMapper">
+
+  
+  <update id="update">
+  	update pet
+  	set  
+  	pet_name = #{pet_name},
+  	pet_b_year = #{pet_b_year},
+  	pet_b_month = #{pet_b_month},
+  	pet_b_day = #{pet_b_day},
+  	pet_gender = #{pet_gender},
+  	pet_kind = #{pet_kind},
+  	pet_weight = #{pet_weight},
+  	neutralization = #{neutralization},
+  	surgery_date = #{surgery_date},
+  	report_file = #{report_file},
+  	pet_img = #{pet_img}
+  	where userid = #{userid}
+  </update>
+  
+  
+  <insert id="insert">
+  	insert into pet values
+  	(#{userid},
+  	#{pet_name}, 
+  	#{pet_b_year}, 
+  	#{pet_b_month}, 
+  	#{pet_b_day}, 
+  	#{pet_gender}, 
+  	#{pet_kind}, 
+  	#{pet_weight},
+  	#{neutralization},
+  	#{surgery_date},
+  	#{report_file},
+  	#{pet_img})
+  </insert>
+  
+  <delete id="delete">
+  	delete from pet where pet_name = #{pet_name} and userid = #{userid}
+  </delete>
+  
+  <select id="read">
+  	select * from pet where pet_name = #{pet_name} and userid = #{userid}
+  </select>
+  
+
+  
+</mapper>

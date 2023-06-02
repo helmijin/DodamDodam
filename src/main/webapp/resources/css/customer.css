@@ -1,0 +1,383 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, textarea, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+    vertical-align: baseline;
+    color: #333;
+    box-sizing: border-box;
+}
+script {
+    display: none;
+}
+div {
+    display: block;
+}
+body {
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+    max-width: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#wrapper {
+    position: relative;
+}
+#wrapper.customer .containerWrap {
+    padding-top: 107px;
+}
+.inner-contents .section {
+    max-width: 1240px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 70px 20px 70px;
+    box-sizing: border-box;
+    min-height: 723px;
+}
+.page-cs-title {
+    margin-bottom: 20px;
+}
+.page-cs-title strong {
+    font-size: 30px;
+    font-weight: 500px;
+    margin-right: 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+.cs-main .cs-container {
+    display: inline-block;
+}
+.cs-main .cs-container .col-70 {
+    width: 70%;
+    float: left;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mypageGrayBox {
+    background: #f7f7f7;
+    padding: 20px 0;
+    text-align: center;
+}
+.mypageGrayBox .faqDiv {  
+    /* display: inline-block;
+    text-align: left; */
+    padding: 10px 30px;
+    box-sizing: border-box;
+    width: auto;
+}
+form {
+    display: block;
+    /* margin-top: 0em; */
+}
+.cs-main .mypageGrayBox .faqDiv {
+    width: 100%;
+    padding: 25px 93px;
+    box-sizing: border-box;
+}
+.mypageGrayBox .faqDiv .divWrap input.fullInput {
+    margin-right: 3px;
+    height: 42px;
+    width: 85%;
+}
+.mypageGrayBox input {
+    /* height: 32px; */
+    line-height: 32px;
+    color: #777;
+    text-indent: 10px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+textarea, input {
+    box-sizing: border-box;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    /* color: fieldtext; */
+    letter-spacing: normal;
+    word-spacing: normal;
+    /* line-height: normal; */
+    text-transform: none;
+    /* text-indent: 0px; */
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    /* appearance: auto; */
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    /* margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial; */
+}
+.mypageGrayBox .srchBtn {
+    display: inline-block;
+    vertical-align: middle;
+}
+.inner-contents .section {
+    max-width: 1240px;
+    margin: 0 auto;
+    /* text-align: center; */
+    padding: 70px 20px 70px;
+    box-sizing: border-box;
+    min-height: 723px;
+}
+.mypageGrayBox .faqDiv .divWrap .srchBtn a {
+    background: #42c6a1;
+    height: 42px;
+    line-height: 41px;
+    width: 200%;
+}
+.mypageGrayBox .srchBtn a {
+    /* width: 84px;
+    height: 32px;
+    line-height: 31px;
+    background: #269cd3; */
+    display: inline-block;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.938em;
+    text-align: center;
+}
+a:link, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    /* color: -webkit-link; */
+    /* text-decoration: underline;  */
+}
+.faqBtnList {
+    text-align: left;
+    margin-bottom: 15px;
+}
+ol, ul {
+    list-style: none;
+}
+ul {
+    display: block;
+    /* list-style-type: disc; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.faqBtnList li {
+    /* display: inline-block;
+    width: 100%; */
+    margin-right: 7px;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 15px;
+    color: #777;
+    display: inline-block;
+    box-sizing: border-box;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.faqBtnList li.on a {
+    border-color: #2d9fd4;
+    background: #2d9fd4;
+    color: #fff;
+}
+.faqBtnList li a {
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #777;
+    color: #777; 
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 30px;
+    display: inline-block;
+}
+.faqList {
+    text-align: left;
+}
+.faqList li.q {
+    background: #fff url(../Bodeum_files/faqIcon.png)no-repeat left center;
+    cursor: pointer;
+    padding: 25px 10px 26px 30px;
+}
+.faqList li:first-child {
+    border-top: 1px solid #d7d7d7;
+}
+.faqList li.q img {
+    float: right;
+    padding: 3px 0 2px;
+}
+.faqList li {
+    border-bottom: 1px solid #d7d7d7;
+   /*  display: inline-block;
+    width: 100%; */
+    font-size: 15px;
+    color: #777;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.faqList li.a {
+    display: none; 
+    line-height: 22px;
+    padding: 25px 30px 26px;
+    background-color: #f7f7f7;
+}
+.cs-main .cs-container .col-30 {
+    width: 30%;
+    float: left;
+}
+.cs-main .cs-main-right {
+    padding-left: 50px;
+}
+.cs-main .cs-main-right .csDiv {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.cs-main .cs-main-right .csDiv h4 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* font-weight: bold; */
+}
+.cs-main .cs-main-right .csDiv h4 img {
+    width: 33px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.cs-main .cs-main-right .csDiv .txt {
+    font-size: 14px;
+    color: #777;
+    line-height: 18px;
+}
+.cs-main .cs-main-right .csDiv .txt span.blue {
+    font-size: 14px;
+}
+.blue {
+    color: #269cd3;
+}
+.cs-main .cs-main-right .csDiv .ulList {
+    margin-top: 6px;
+}
+.cs-main .cs-main-right .csDiv .ulList li {
+    font-size: 13px;
+/*     padding-bottom: 5px;
+ */    color: #777;
+    position: relative;
+    padding-left: 5px;
+    line-height: 17px;
+}
+.cs-main .cs-main-right .csDiv .ulList li:before {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background: #777;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.cs-main .cs-main-right .csDiv .ulList li:last-child {
+    padding-bottom: 0;
+}
+.cs-main .cs-main-right .csDiv .btn {
+    margin-top: 20px;
+}
+.cs-main .cs-main-right .csDiv .btn a {
+    font-size: 13px;
+    text-align: center;
+    color: #777;
+    border: 1px solid #777;
+    width: 122px;
+    height: 32px;
+    line-height: 30px;
+}
+.roundBtn {
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    /* height: 43px; */
+    /* line-height: 41px; */
+    cursor: pointer;
+}
+
+.cs-main .cs-main-right .csDiv .number {
+    font-size: 20px;
+    color: #269cd3;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.cs-main .cs-main-right .csDiv .hours h5 {
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.cs-main .cs-main-right .csDiv .hours > div:first-of-type span {
+    color: #777;
+    font-size: 13px;
+}
+.cs-main .cs-main-right .csDiv .hours > div:first-of-type span.lunch {
+    position: relative;
+    padding-left: 8px;
+    margin-left: 10px;
+}
+.cs-main .cs-main-right .csDiv .hours > div:first-of-type span {
+    color: #777;
+    font-size: 13px;
+}
+.cs-main .cs-main-right .csDiv .hours > div:first-of-type span.lunch:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 13px;
+    background: #777;
+    left: 0;
+    top: 4px;
+}
+.cs-main .cs-main-right .csDiv .hours > div:last-of-type {
+    color: #777;
+    font-size: 13px;
+}
+.cs-main .cs-main-right .csDiv .hours > div {
+    line-height: 19px;
+}
+.cs-main .cs-main-right .csDiv .hours > div:last-of-type .blue {
+    font-size: 13px;
+}.cs-main .cs-main-right .csDiv03 .hours:last-of-type {
+    margin-top: 10px;
+}
+h5 {
+    display: block;
+    /* font-size: 0.83em; */
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* font-weight: bold; */
+}

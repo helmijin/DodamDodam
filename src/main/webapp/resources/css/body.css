@@ -1,0 +1,837 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+textarea,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+    vertical-align: baseline;
+    color: #333;
+    box-sizing: border-box;
+}
+html {
+    display: block;
+}
+#wrapper {
+    position: relative;
+    margin: 0px auto 0;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background: #fff;
+    /*color: #231815;*/
+    max-width: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    line-height: 1;
+    font-family: 'Noto Sans KR', sans-serif;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+#wrapper .containerWrap {
+    padding-top: 157px;
+}
+
+.slider {
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+}
+
+.shopmain .slide-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+}
+
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.shopmain .slideTxt {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto; 
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.shopmain .slide-viewer .slide {
+    height: 480px !important;
+    /*  background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;*/
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    /*height: 100%;
+    display: none;*/
+}
+
+.slide-buttons {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+.slide-btn {
+    background: transparent;
+    font-size: 200%;
+   /*  text-indent: -9999; */
+    display: inline-block;
+    line-height: 0.5em;
+    width: 11px;
+    height: 11px;
+    margin: 0 7px;
+    box-sizing: border-box;
+    border: 2px solid #0b1e3e;
+    border-radius: 50px;
+}
+
+.slide-btn.active,
+.slide-btn:hover {
+    background: #0b1e3e;
+    text-indent: -9999;
+    cursor: pointer;
+}
+
+.page-sub-title {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    position: relative;
+}
+
+.page-sub-title strong {
+    font-size: 28px;
+    font-weight: 500;
+    margin-right: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    clear: both;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.row .col-25 {
+    width: 25%;
+}
+
+.row .col-20,
+.row .col-25,
+.row .col-30,
+.row .col-33,
+.row .col-35,
+.row .col-40,
+.row .col-50,
+.row .col-60,
+.row .col-66,
+.row .col-70,
+.row .col-75,
+.row .col-100 {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.bodeum-shop .prd-wrap .img {
+    margin-bottom: 11px;
+    line-height: 0;
+}
+
+.ratio2.thumbnail-wrapper {
+    width: 100%;
+}
+
+.ratio2 .thumbnail {
+    position: relative;
+    padding-top: 98%;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.ratio2 .thumbnail .centered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    /*color: -webkit-link;
+    text-decoration: underline;*/
+}
+
+.bodeum-shop .prd-wrap .title {
+    margin-bottom: 17px;
+    line-height: 18px;
+    text-align: left;
+    height: 36px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.bodeum-shop .prd-wrap .price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+}
+
+.bodeum-shop .prd-wrap .price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+}
+
+.ratio2 .thumbnail .centered img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    max-width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bodeum-shop .prd-wrap .title a {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.bodeum-shop .prd-wrap .price strong {
+    font-size: 18px;
+    color: #061f5c;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+.bodeum-shop .prd-wrap .img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+#wrapper.shopmain .section01 .btn {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#wrapper.shopmain .section01 .btn a {
+    width: 172px;
+    border-color: #269cd3;
+    background-color: #269cd3;
+    color: #fff;
+}
+#wrapper.shopmain .section04 .btn a {
+    width: 172px;
+    margin-top: 0;
+    border-color: #269cd3;
+    background-color: #269cd3;
+    color: #fff;
+}
+
+.whiteBtn {
+    background: transparent;
+    border: 1px solid #231815;
+    box-sizing: border-box;
+}
+
+.roundBtn {
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    height: 43px;
+    line-height: 41px;
+    cursor: pointer;
+}
+
+#wrapper.shopmain .section04 {
+    margin: 0 0 70px;
+}
+
+.bg_gray {
+    background: #f7f7f7;
+}
+
+#wrapper.shopmain .section01 .inner-contents .section,
+#wrapper.shopmain .section04 .inner-contents .section,
+#wrapper.shopmain .section05 .inner-contents .section {
+    min-height: auto;
+}
+
+.inner-contents .section {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 20px 70px;
+    box-sizing: border-box;
+    min-height: 723px;
+}
+
+.page-sub-title {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    position: relative;
+}
+
+.page-sub-title strong {
+    font-size: 28px;
+    font-weight: 500;
+    margin-right: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+#wrapper.shopmain .section04 ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#wrapper.shopmain .section04 ul.tabs li.active {
+    background: #061f5c;
+    color: #fff;
+    border-color: #061f5c;
+    font-weight: 400;
+}
+
+#wrapper.shopmain .section04 ul.tabs li {
+    display: inline-block;
+    width: auto;
+    height: 33px;
+    line-height: 31px;
+    color: #555;
+    background: transparent;
+    border: 1px solid #cdcdcd;
+    margin: 0 5px;
+    padding: 0 22px;
+    border-radius: 50px;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+ul.tabs li.active {
+    background: #061f5c;
+    color: #fff;
+}
+
+ul.tabs li {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 166px;
+    height: 42px;
+    line-height: 40px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #231816;
+    overflow: hidden;
+    position: relative;
+    margin: 0 5px;
+}
+
+#wrapper.shopmain .section04 .tab_container {
+    float: none;
+    display: inline-block;
+}
+
+.tab_container {
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 15px 0px 0px;
+}
+
+/*여기 display:none; 막으면 best seller 항목 안보임*/
+.tab_content { 
+    text-align: center;
+}
+
+.row {
+    clear: both;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.bodeum-shop .prd-wrap .img {
+    margin-bottom: 11px;
+    line-height: 0;
+}
+
+.ratio2.thumbnail-wrapper {
+    width: 100%;
+}
+
+.tab_container .tab_content a.roundBtn {
+    background: #269cd3;
+    color: #fff;
+    width: 172px;
+    margin-top: 30px;
+}
+
+#wrapper.shopmain .section02 .event-bnr {
+    background-color: #f7f7f7;
+}
+
+#wrapper.shopmain .section02 .event-bnr .bnrWrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#wrapper.shopmain .section02 .event-bnr .bnrTxt {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#wrapper.shopmain .section02 .event-bnr .bnrTxt .txtWrap {
+    position: absolute;
+    z-index: 98;
+    top: 80px;
+    right: 20px;
+    text-align: center;
+}
+
+.shopmain .slideTxt .txtWrap {
+    position: absolute;
+    z-index: 98;
+    top: 90px;
+}
+
+.shopmain .slideTxt h2 strong {
+    color: #333;
+    font-size: 50px;
+}
+
+#wrapper.shopmain .section02 .event-bnr .bnrTxt .txt {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 26px;
+    display: inline-block;
+}
+
+.shopmain .slideTxt a {
+    font-size: 16px;
+    border: 1px solid #231815;
+    border-radius: 50px;
+    width: 160px;
+    height: 38px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+}
+.shopmain .slideTxt .txt:before {
+    content: '';
+    width: 15px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+}
+.shopmain .slideTxt .txt {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 21px;
+}
+#wrapper.shopmain .section02 .event-bnr .bnrTxt h2 {
+    font-size: 34px;
+    line-height: 36px;
+    margin-bottom: 13px;
+}
+
+.shopmain .slideTxt h2 {
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 17px;
+}
+
+.shopmain .slideTxt h2 strong {
+    color: #333;
+    font-size: 50px;
+}
+
+#wrapper.shopmain .section02 .event-bnr .bnrTxt .sm-txt {
+    font-size: 15px;
+    margin-bottom: 29px;
+}
+
+#wrapper.shopmain .section02 .event-bnr .bnrTxt a {
+    font-size: 16px;
+    border: 1px solid #231815;
+    border-radius: 50px;
+    width: 160px;
+    height: 38px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+}
+
+#wrapper.shopmain .section03 {
+    padding: 70px 0 0px;
+}
+
+#wrapper.shopmain .section03 .event {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#wrapper.shopmain .section03 .event .row .eventBnr {
+    margin: -10px 0;
+}
+
+#wrapper.shopmain .section03 .event .row .eventBnr>div {
+    padding: 10px 0;
+}
+
+#wrapper.shopmain .section05 .inner-contents {
+    text-align: center;
+}
+
+#wrapper.shopmain .section05 .inner-contents .section {
+    display: inline-block;
+    width: 100%;
+   padding: 70px 20px 0px;
+}
+
+.inner-contents .section {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 70px 20px 70px;
+    min-height: 723px;
+}
+
+#wrapper.shopmain .section05 .container {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+#wrapper.shopmain .section05 .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#wrapper.shopmain .section05 .customerBox {
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #d8d8d8;
+    background: #fff url(../../../resources/Bodeum_files/shopmainImg2.png)no-repeat center right;
+    min-height: 200px;
+    cursor: pointer;
+}
+
+#wrapper.shopmain .section05 .customerBox .tel {
+    font-size: 30px;
+    color: #061f5c;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+#wrapper.shopmain .section05 .customerBox .time {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#wrapper.shopmain .section05 .customerBox .time .bar {
+    display: inline-block;
+    margin: 0 5px 0 6px;
+    vertical-align: baseline;
+    border-left: 1px solid #333;
+    width: 1px;
+    height: 12px;
+}
+
+#wrapper.shopmain .section05 .customerBox .holiday {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.blue {
+    color: #269cd3;
+}
+
+#wrapper.shopmain .section05 .row .col-25 {
+    padding: 0 5px;
+}
+
+#wrapper.shopmain .section05 .box {
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    min-height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+#wrapper.shopmain .section05 .box h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#wrapper.shopmain .section05 .box .icon {
+    width: 73px;
+    height: 73px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+#wrapper.shopmain .section05 .box .icon img {
+    width: 73px;
+}
+
+#wrapper.shopmain .section05 .box .txt {
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.shopmain .slideTxt .txt {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 21px;
+}
+
+.bodeum-shop .ft_top {
+    background: #fff;
+}
+
+.ft_top {
+    border-bottom: 1px solid #676767;
+    padding: 40px 0;
+    background: #ebebeb;
+}
+
+.ft_top .ft_top_wrap {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.ft_top .ft_top_wrap .row {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+.ft_top .ft_top_wrap .row .col-50 {
+    padding: 0;
+}
+.row .col-50 {
+    width: 50%;
+}
+.ft_top .quotation {
+    position: relative;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    line-height: 43px;
+    text-align: center;
+}
+
+.ft_top .quotation:before {
+    content: '';
+    background: url(../../../resources/Bodeum_files/q_mark1.png) no-repeat;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ft_top .quotation:after {
+    content: '';
+    background: url(../../../resources/Bodeum_files/q_mark2.png) no-repeat;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ft_top .sns {
+    text-align: right;
+}
+
+.ft_top .sns ul {
+    display: inline-block;
+}
+
+.ft_top .sns ul li {
+    display: inline-block;
+    padding: 0 5px;
+}

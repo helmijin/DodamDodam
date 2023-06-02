@@ -1,0 +1,18 @@
+function fnMove(id){
+        var offset = $("#" + id).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+ }
+ 
+
+var $fixWrap = $('.bodeum-shop .prdInfoWrap') ,
+    $leftImg = $('.bodeum-shop #prdDetail2 .prdDetailExp-1 .prd-detailImg').height() ,
+    $target = '';
+    
+$(window).on('scroll', function() {
+    $target = $(window).scrollTop();
+    if ($target > $leftImg) {
+        $fixWrap.addClass('sticky-fixed-scroll');
+    } else {
+        $fixWrap.removeClass('sticky-fixed-scroll');
+    }
+}); 
