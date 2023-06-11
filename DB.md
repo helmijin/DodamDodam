@@ -1,14 +1,14 @@
 # DB(Oracle)
-/*
+
 CREATE TABLE address(
 userid varchar2(30) not null,
 zipcode varchar2(30) not null,
 address varchar2(30) not null,
 address2 varchar2(30) not null
 );
- */
+   
  
- /*
+ 
 CREATE TABLE board(
 userid varchar2(30) not null,
 tel varchar2(30) not null,
@@ -25,9 +25,9 @@ cnt number(10) not null,
 answerchk varchar2(30) not null,
 answer varchar2(30) not null
 );
- */
+  
  
-  /*
+
 CREATE TABLE cart(
 userid varchar2(30) not null,
 itemnum number(10) not null,
@@ -36,8 +36,8 @@ itemprice number(10) not null,
 itempic varchar2(30) not null,
 itemcnt number(10) not null
 );
-
- /*
+  
+ 
 CREATE TABLE coupon(
 userid varchar2(30) not null,
 coupon varchar2(30) not null,
@@ -45,9 +45,9 @@ disco varchar2(30) not null,
 exp number(30) not null,
 itemcat varchar2(30) not null
 );
- */
+   
  
-  /*
+  
 CREATE TABLE eduboard(
 boardnum number(30) not null,
 userid varchar2(30) not null,
@@ -56,27 +56,8 @@ content number(30) not null,
 date date(30) not null,
 cnt number(10) not null
 );
- */
- 
- /*CREATE table edugroup(
-itemnum number(10) not null,
-title VARCHAR2(100) not null,
-name varchar2(20) not null,
-edudate varchar2(20) not null,
-type varchar2(20) not null,
-time varchar2(20) not null,
-place varchar2(500) not null,
-prepare varchar2(500) not null,
-recopet varchar2(500) not null,
-content1 varchar2(500) not null,
-content2 varchar2(500) not null,
-content3 varchar2(500) not null,
-edupic number(10) not null,	    
-point number(10) not null
-);
-*/
 
-/*
+   
 CREATE table edugroup(
 itemnum number(10) not null,
 title VARCHAR2(100) not null,
@@ -93,9 +74,27 @@ content3 varchar2(500) not null,
 edupic number(10) not null,	    
 point number(10) not null
 );
-*/  
+  
 
-/*
+CREATE table edugroup(
+itemnum number(10) not null,
+title VARCHAR2(100) not null,
+name varchar2(20) not null,
+edudate varchar2(20) not null,
+type varchar2(20) not null,
+time varchar2(20) not null,
+place varchar2(500) not null,
+prepare varchar2(500) not null,
+recopet varchar2(500) not null,
+content1 varchar2(500) not null,
+content2 varchar2(500) not null,
+content3 varchar2(500) not null,
+edupic number(10) not null,	    
+point number(10) not null
+);
+   
+
+
 CREATE table edu(
 title VARCHAR2(100) not null,
 name varchar2(20) not null,
@@ -108,9 +107,9 @@ edupic number(10) not null,
 picdisco number(10) not null,
 point number(10) not null
 );
-*/
+  
 
-/*
+
 CREATE table manager(
 bno number(10) not null,
 title varchar2(20) not null,
@@ -119,9 +118,9 @@ writer varchar2(20) not null,
 regdate date not null,
 updateDate date not null,
 );
-*/
 
-/*
+  
+
 create table member(
 USERID     VARCHAR2(50) not null,
 PASSWD     VARCHAR2(20) not null,
@@ -143,17 +142,17 @@ AGREE3     VARCHAR2(50) not null,
 POINT      NUMBER(10)   not null,
 GREDE      VARCHAR2(50) not null
 );
-*/
 
-/*
+  
+
 CREATE TABLE MENUCAT(
 CATNAME VARCHAR2(30) NOT NULL,
 CATCODE VARCHAR2(30) NOT NULL,
 CATCODEREF VARCHAR2(30) NULL,
 PRIMARY KEY(CATCODE)
 );
+  
 
-/*
 create table orderlist(
 ORDERNUM      NUMBER(20) NOT NULL,
 ITEMNUM       NUMBER(20) NOT NULL,
@@ -165,9 +164,9 @@ ORDEREDNUM    NUMBER(5)    NOT NULL,
 ZIPCODE       VARCHAR2(20) NOT NULL,
 ADDRESS       VARCHAR2(20) NOT NULL
 );
-*/
 
-/*
+  
+
 create table payment(
 PAYMENTCODE      VARCHAR2(20) NOT NULL,
 ORDEREDNUM       VARCHAR2(20) NOT NULL,
@@ -180,9 +179,9 @@ ACCOUNTHOLDER    VARCHAR2(30) NOT NULL,
 ACCOUNTNUMBER    VARCHAR2(30) NOT NULL,
 USERID           VARCHAR2(30) NOT NULL
 );
-*/
 
-/*
+  
+
 create table pet(
 userid      VARCHAR2(20) NOT NULL,
 petname     VARCHAR2(20) NOT NULL,
@@ -191,9 +190,9 @@ petage      number(10)   NOT NULL,
 petspec     VARCHAR2(20) NOT NULL,
 petpic      VARCHAR2(20) NOT NULL
 );
-*/
 
-/*
+ 
+
 create table product(
 ITEMNUM          NUMBER(10)    NOT NULL,
 ITEMCAT          VARCHAR2(20)  NOT NULL,
@@ -212,9 +211,9 @@ SALESSTATUS      VARCHAR2(20)  NOT NULL,
 ITEMSELL NUMBER(20) NOT NULL,
 ITEMCNT          NUMBER(10) NOT NULL
 );
-*/
+  
 
-/*
+
  CREATE TABLE REVIEW(
 USERID VARCHAR2(25),
 TEL VARCHAR2(20),
@@ -227,4 +226,4 @@ RBOARDNUM NUMBER(10),
 RCNT NUMBER(5),
 ITEMNUM NUMBER(20)
 );
- */
+
