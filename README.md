@@ -18,22 +18,22 @@
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/eb752429-22a3-47a3-a39e-9059ee1af643)
 
 # 📺 실행 화면
-메인화면
+### 메인화면
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/e2a47f74-9153-49c1-b223-4c45802a2cae)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/dbf38cc8-813a-45bc-a2f0-2b0516b17174)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/9dc8cd05-625e-4cc1-b5a9-3b09850f9fdb)
-카테고리 선택시
+### 카테고리 선택시
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/8d0e4a5f-3f37-4993-b5e6-ea835bbc05d0)
-상품 내용
+### 상품 내용
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/fcb4145e-c156-4874-9680-3f9fa91bb022)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/ef87f774-18f7-412a-b3b1-1f7e60db6825)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/a23f44d6-7a45-483f-b7ae-b05e46e85b41)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/4d8b8299-b012-4302-bc12-a15f3bd31ea5)
-상품 후기 페이지
+### 상품 후기 페이지
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/6f479bba-d83c-4bc6-aff5-bc38091d5bb8)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/7e6c813e-fa30-44bd-b859-759599bd44b3)
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/69d2fa2b-0d64-447f-9743-92123c57879b)
-공지사항
+### 공지사항
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/70aead04-d840-47c3-b938-3db46c10c41c)
-푸터
+### 푸터
 ![image](https://github.com/helmijin/DodamDodam/assets/113495471/e56a7836-578f-4582-9912-f53296cd2a28)
